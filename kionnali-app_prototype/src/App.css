@@ -1,38 +1,86 @@
-.App {
+/* CSS for iPhone container and screen */
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
   text-align: center;
+  background-color: #000;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.iphone-container {
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px;
+  width: 431px; /* Adjust dimensions to match an iPhone */
+  height: 860px;
+  flex-shrink: 0;
+  border: 2px solid lightskyblue; /* Border simulates the iPhone frame */
+  border-radius: 48px; /* Border radius for rounded corners */
+
+  /* Additional styling for position and centering */
+  background-color: #000; /* Background color for the bezel area */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bezel-1 {
+  width: 430px;
+  height: 865px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  border: 2px solid pink;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*render content here*/
+.bezel-2 {
+  margin: 0 auto;
+  background-color: lightgray;
+  width: 423px;
+height: 860px;
+flex-shrink: 0;
+border-radius: 48px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-1 {
+  width: 4px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 8px 0px 0px 8px;
+border: 3px solid lightskyblue;
+z-index: 0;
+position: absolute;
+margin: 140px 0px 0px -17px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-2 {
+  width: 4px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 8px 0px 0px 8px;
+border: 3px solid lightskyblue;
+z-index: 0;
+position: absolute;
+margin: 200px 0px 0px -17px;
 }
+
+.lrg-btn {
+  width: 4px;
+height: 80px;
+flex-shrink: 0;
+border-radius: 0px 8px 8px 0px;
+border: 3px solid lightskyblue;
+margin: 110px 0px 0px 435px;
+}
+
+.top-screen {
+  width: 187.5px;
+  height: 32px;
+  border-radius: 0px 0px 24px 24px;
+background: #000;
+margin: 0 auto;
+
+}
+
