@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import Content from "./Components/Content";
+import Logo from "./Components/Logo";
+import Dashboard from "./Components/Dashboard";
 
 export default function App() {
 	return (
@@ -11,6 +13,9 @@ export default function App() {
 				<div className="iphone-screen bezel-2">
 					<div className="top-screen"></div>
 					<div className="lrg-btn"></div>
+
+					<Logo />
+					<Dashboard />
 					<Content />
 				</div>
 			</div>
