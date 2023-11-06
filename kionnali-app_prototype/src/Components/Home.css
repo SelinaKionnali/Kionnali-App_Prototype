@@ -10,6 +10,7 @@
   background-size: cover; /* Cover the entire container */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* No image repetition */
+  overflow: hidden;
 }
 
 .top-screen {

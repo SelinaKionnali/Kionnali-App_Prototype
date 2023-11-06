@@ -8,6 +8,9 @@ export default function Dashboard() {
 	return (
 		<>
 			<div className="dashboard">
+				<div className="welcome"></div>
+				<div className="off-grid"></div>
+
 				<div className="rounded-tile">
 					<button class="weather-button"></button>
 					<button class="coffee-button"></button>
