@@ -9,8 +9,8 @@ export default function Dashboard() {
 		<>
 			<div className="dashboard">
 				<div className="rounded-tile">
-					<button class="coffee-button"></button>
 					<button class="weather-button"></button>
+					<button class="coffee-button"></button>
 					<button class="flag-button"></button>
 
 					<div className="coffee-tile"></div>
