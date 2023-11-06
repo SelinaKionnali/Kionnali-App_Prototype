@@ -1,3 +1,14 @@
+.container {
+  overflow: hidden;
+  position: relative;
+  width: 431px;
+  height: 868px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  overflow-y: auto;
+
+}
+
 .dashboard {
   position: relative;
   background-image: url("/src/Assets/Dashboard/dashboardBG.png");
@@ -25,7 +36,6 @@
   left: -1%;
   right: 0;
   padding: 0;
-  overflow: hidden;
 
 
 }

@@ -7,18 +7,20 @@ export default function Dashboard() {
 
 	return (
 		<>
-			<div className="dashboard">
-				<div className="welcome"></div>
-				<div className="off-grid"></div>
+			<div className="container">
+				<div className="dashboard">
+					<div className="welcome"></div>
+					<div className="off-grid"></div>
 
-				<div className="rounded-tile">
-					<button class="weather-button"></button>
-					<button class="coffee-button"></button>
-					<button class="flag-button"></button>
+					<div className="rounded-tile">
+						<button class="weather-button"></button>
+						<button class="coffee-button"></button>
+						<button class="flag-button"></button>
 
-					<div className="coffee-tile"></div>
-					<div className="weather-tile"></div>
-					<div className="flag-tile"></div>
+						<div className="coffee-tile"></div>
+						<div className="weather-tile"></div>
+						<div className="flag-tile"></div>
+					</div>
 				</div>
 			</div>
 		</>
