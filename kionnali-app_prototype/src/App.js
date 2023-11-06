@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Logo from "./Components/Logo";
+import Home from "./Components/Home";
 import "./App.css";
 import Dashboard from "./Components/Dashboard";
 
@@ -8,21 +8,18 @@ export default function App() {
 		<Router>
 			<div className="app">
 				<div className="iphone-container">
-					<div className="btn-1"></div>
-					<div className="btn-2"></div>
-					<div className="iphone-screen bezel-2">
-						<div className="top-screen"></div>
-						<div className="lrg-btn"></div>
-						<Route
-							exact
-							path="/"
-							component={Logo}
-						/>
-						<Route
-							path="/dashboard"
-							component={Dashboard}
-						/>
-					</div>
+					<div className="btn btn-1"></div>
+					<div className="btn btn-2"></div>
+					<div className="btn lrg-btn"></div>
+					<Route
+						exact
+						path="/"
+						component={Home}
+					/>
+					<Route
+						path="/dashboard"
+						component={Dashboard}
+					/>
 				</div>
 			</div>
 		</Router>

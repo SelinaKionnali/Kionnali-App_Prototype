@@ -1,89 +1,42 @@
-/* CSS for iPhone container and screen */
-body {
-  background-color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-.app {
-  text-align: center;
-  background-color: #000;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.iphone-container {
-  margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  padding: 10px;
-  width: 431px; /* Adjust dimensions to match an iPhone */
-  height: 860px;
+/* Base button styles */
+.btn {
   flex-shrink: 0;
-  border: 2px solid lightskyblue; /* Border simulates the iPhone frame */
-  border-radius: 48px; /* Border radius for rounded corners */
-
-  /* Additional styling for position and centering */
-  background-color: #000; /* Background color for the bezel area */
+  border-radius: 8px 0px 0px 8px;
+  border: 3px solid lightskyblue;
+  position: absolute;
+  z-index: 0;
 }
 
-.bezel-1 {
-  width: 430px;
-  height: 865px;
-  flex-shrink: 0;
-  border-radius: 48px;
-  border: 2px solid pink;
-}
-
-/*render content here*/
-.bezel-2 {
-  margin: 0 auto;
-  background-image: url("/src/Assets/midnightGazelle.png");
-  width: 423px;
-  height: 860px;
-  flex-shrink: 0;
-  border-radius: 48px;
-  background-size: cover; /* Cover the entire container */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* No image repetition */
+/* Adjust the .btn-1 and .btn-2 classes to only define what's different from the base .btn class */
+.btn-1, .btn-2 {
+  width: 4px;
+  height: 40px;
+  left: -10px; /* Use left/right/top/bottom with position: absolute instead of margins */
 }
 
 .btn-1 {
-  width: 4px;
-  height: 40px;
-  flex-shrink: 0;
-  border-radius: 8px 0px 0px 8px;
-  border: 3px solid lightskyblue;
-  z-index: 0;
-  position: absolute;
-  margin: 140px 0px 0px -17px;
+  top: 140px; /* Position for the first button */
 }
 
 .btn-2 {
-  width: 4px;
-  height: 40px;
-  flex-shrink: 0;
-  border-radius: 8px 0px 0px 8px;
-  border: 3px solid lightskyblue;
-  z-index: 0;
-  position: absolute;
-  margin: 200px 0px 0px -17px;
+  top: 200px; /* Position for the second button */
 }
 
 .lrg-btn {
   width: 4px;
   height: 80px;
-  flex-shrink: 0;
-  border-radius: 0px 8px 8px 0px;
-  border: 3px solid lightskyblue;
-  margin: 110px 0px 0px 435px;
+  right: -10px; /* Align to the right side */
+  top: 140px;
+  border-radius: 0px 8px 8px 0px; /* Unique border-radius for the large button */
 }
 
-.top-screen {
-  width: 187.5px;
-  height: 32px;
-  border-radius: 0px 0px 24px 24px;
-  background: #000;
-  margin: 0 auto;
+.iphone-container {
+  position: relative; /* Important for absolute positioning of children */
+  margin: 5rem auto;
+  padding: 10px;
+  width: 431px;
+  height: 870px;
+  border-radius: 48px;
+  background-color: #000;
+  border: 2px solid lightskyblue;
 }
-
