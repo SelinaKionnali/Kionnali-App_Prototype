@@ -17,21 +17,69 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 440px;
-  border-top-left-radius: 100px; /* Adjust the px as needed */
+  border-top-left-radius: 100px; 
   border-top-right-radius: 100px;
   position: absolute; 
-  top: 50%; /* this value will bring your overlay down to start from the middle of the screen */
+  top: 50%; 
   bottom: 0;
   left: -1%;
   right: 0;
-  padding: 0; /* This will allow you to add padding to the top and bottom of the overlay */
+  padding: 0;
   overflow-y: auto; /* Keep the content scrollable */
 }
 
 
-.coffee-tile {
+/* .coffee-tile {
+  background: url("/src/Assets/Dashboard/DBmorningModeCoffeeTile.png") no-repeat center center;
+  background-size: auto; 
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%); 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  height: 120px; 
+  width: 189px; 
+  border-radius: 80px 80px 20px 20px; 
+  box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
+} */
+
+.coffee-button {
+  background: url("/src/Assets/Dashboard/DBmorningModeCoffeeTile.png") no-repeat center center;
+  position: relative;
+  top: 5%;
+  width: 189px; 
+  height: 120px; 
+  background-color: #ffffff; 
+  border-radius: 80px 80px 20px 20px; 
+  box-shadow: 5px 5px 8px rgba(54, 70, 20, 0.10), -4px -4px 15px rgba(46, 50, 40, 0.05); /* Shadow effect */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  overflow: hidden; /* Ensure nothing spills out of the border-radius */
+}
+
+.coffee-button img {
+  max-width: 100%; /* Limit image size to the container's width */
+  max-height: 100%; /* Limit image size to the container's height */
+}
+
+.weather-button {
 
 }
+
+.weather-button img {
+  max-width: 100%; 
+  max-height: 100%; 
+}
+
+.flag-button {
+
+}
+
+.flag-button img {
+  max-width: 100%; 
+  max-height: 100%; 
+}
+
 
 .weather-tile {
 
