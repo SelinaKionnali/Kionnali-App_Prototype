@@ -1,0 +1,42 @@
+.dashboard {
+  position: relative;
+  background-image: url("/src/Assets/Dashboard/dashboardBG.png");
+  width: 431px;
+  height: 868px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* No image repetition */
+  overflow: auto; /* Allows scrolling if content overflows */
+  
+}
+
+.rounded-tile {
+  background: url("/src/Assets/Dashboard/DBroundedTopTile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 440px;
+  border-top-left-radius: 100px; /* Adjust the px as needed */
+  border-top-right-radius: 100px;
+  position: absolute; 
+  top: 50%; /* this value will bring your overlay down to start from the middle of the screen */
+  bottom: 0;
+  left: -1%;
+  right: 0;
+  padding: 0; /* This will allow you to add padding to the top and bottom of the overlay */
+  overflow-y: auto; /* Keep the content scrollable */
+}
+
+
+.coffee-tile {
+
+}
+
+.weather-tile {
+
+}
+
+.flag-tile {
+
+}
