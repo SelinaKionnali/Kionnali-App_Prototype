@@ -40,51 +40,50 @@ body {
   margin: 0 auto;
   background-image: url("/src/Assets/midnightGazelle.png");
   width: 423px;
-height: 860px;
-flex-shrink: 0;
-border-radius: 48px;
-background-size: cover; /* Cover the entire container */
+  height: 860px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  background-size: cover; /* Cover the entire container */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* No image repetition */
 }
 
 .btn-1 {
   width: 4px;
-height: 40px;
-flex-shrink: 0;
-border-radius: 8px 0px 0px 8px;
-border: 3px solid lightskyblue;
-z-index: 0;
-position: absolute;
-margin: 140px 0px 0px -17px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 8px 0px 0px 8px;
+  border: 3px solid lightskyblue;
+  z-index: 0;
+  position: absolute;
+  margin: 140px 0px 0px -17px;
 }
 
 .btn-2 {
   width: 4px;
-height: 40px;
-flex-shrink: 0;
-border-radius: 8px 0px 0px 8px;
-border: 3px solid lightskyblue;
-z-index: 0;
-position: absolute;
-margin: 200px 0px 0px -17px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 8px 0px 0px 8px;
+  border: 3px solid lightskyblue;
+  z-index: 0;
+  position: absolute;
+  margin: 200px 0px 0px -17px;
 }
 
 .lrg-btn {
   width: 4px;
-height: 80px;
-flex-shrink: 0;
-border-radius: 0px 8px 8px 0px;
-border: 3px solid lightskyblue;
-margin: 110px 0px 0px 435px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 0px 8px 8px 0px;
+  border: 3px solid lightskyblue;
+  margin: 110px 0px 0px 435px;
 }
 
 .top-screen {
   width: 187.5px;
   height: 32px;
   border-radius: 0px 0px 24px 24px;
-background: #000;
-margin: 0 auto;
-
+  background: #000;
+  margin: 0 auto;
 }
 
