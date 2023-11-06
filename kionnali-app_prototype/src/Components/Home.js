@@ -15,12 +15,10 @@ export default function Home() {
 			<div className="logo"></div>
 			<div className="brand"></div>
 			<div className="welcome"></div>
-			<div className="off-grid"></div>{" "}
-			<button
+			<div className="off-grid"></div>
+			<div
 				className="button-container"
-				onClick={handleClick}>
-				Sign In
-			</button>
+				onClick={handleClick}></div>
 		</div>
 	);
 }

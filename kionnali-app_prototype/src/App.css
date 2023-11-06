@@ -1,3 +1,30 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.app {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone-container {
+  position: relative; /* Important for absolute positioning of children */
+  margin: 5rem auto;
+  padding: 10px;
+  width: 431px;
+  height: 870px;
+  border-radius: 48px;
+  background-color: #000;
+  border: 2px solid lightskyblue;
+}
+
+
 /* Base button styles */
 .btn {
   flex-shrink: 0;
@@ -28,15 +55,4 @@
   right: -10px; /* Align to the right side */
   top: 140px;
   border-radius: 0px 8px 8px 0px; /* Unique border-radius for the large button */
-}
-
-.iphone-container {
-  position: relative; /* Important for absolute positioning of children */
-  margin: 5rem auto;
-  padding: 10px;
-  width: 431px;
-  height: 870px;
-  border-radius: 48px;
-  background-color: #000;
-  border: 2px solid lightskyblue;
 }

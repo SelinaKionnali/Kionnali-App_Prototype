@@ -4,7 +4,7 @@
   position: relative;  /* Important for absolute positioning of children */
   background-image: url("/src/Assets/midnightGazelle.png");
   width: 431px;
-  height: 860px;
+  height: 868px;
   flex-shrink: 0;
   border-radius: 48px;
   background-size: cover; /* Cover the entire container */
@@ -23,7 +23,7 @@
 
 .logo {
   position: absolute;
-  top: 5%;
+  top: 6%;
   left: 50%;
   transform: translateX(-50%);
   background: url("../Assets/Logo.png") no-repeat center;
@@ -35,7 +35,7 @@
 
 .brand {
   position: absolute;
-  top: 25%;
+  top: 26%;
   left: 28%;
   background: url("../Assets/BrandName.png") no-repeat center;
   width: 183px;
@@ -46,6 +46,9 @@
 
 
 .welcome {
+  position: absolute;
+  top: 75%;
+  left: 3%;
   background: url("../Assets/Welcome\ home.png") no-repeat center;
   display: flex;
   width: 330px;
@@ -61,10 +64,12 @@
   font-weight: 700;
   line-height: 24px; /* 80% */
   letter-spacing: 0.1px;
-  border: 2px solid blue;
 }
 
 .off-grid {
+  position: absolute;
+  top: 80%;
+  left: -1%;
   background: url("../Assets/Day137offgrid.png") no-repeat center;
   display: flex;
   width: 259px;
@@ -72,12 +77,11 @@
   flex-direction: column;
   justify-content: flex-end;
   flex-shrink: 0;
-  border: 2px solid yellow;
 }
 
 .button-container {
   position: absolute;
-  bottom: 10%; /* Adjust as needed */
+  bottom: 7%;
   left: 50%;
   transform: translateX(-50%);
 
@@ -89,7 +93,7 @@ flex-shrink: 0;
 
 .button-container:hover {
   cursor: pointer; /* To indicate this is clickable */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Correct alpha value for shadow */
-  /* opacity: 0.8; */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 2); /* Add a subtle shadow on hover */
+  opacity: 0.9;
 }
 
