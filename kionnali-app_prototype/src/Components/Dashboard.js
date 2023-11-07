@@ -47,13 +47,16 @@ export default function Dashboard() {
 											<span>Tell me more &gt;</span>
 										</button>
 										<button className="close-button">
-											<span>X Close</span>
+											<span>X</span>
 										</button>
 									</>
 								) : (
 									<span>Full Update</span>
 								)}
 							</button>
+						</div>
+						<div className="power-system">
+							<button className="power-system-tile"></button>
 						</div>
 					</div>
 				</div>

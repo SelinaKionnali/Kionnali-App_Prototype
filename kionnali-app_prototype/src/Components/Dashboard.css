@@ -196,39 +196,38 @@ letter-spacing: 0.1px;
   bottom: 10%;
   right: 10%;
   width: 113px;
-height: 32px;
-flex-shrink: 0;
-border-radius: 16px;
-background: var(--button-gradient-light-green, linear-gradient(105deg, #748947 -3.69%, #B1CD75 175.41%));
-color: #FFF;
-text-align: center;
-border: none;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: linear-gradient(105deg, #5D6945 -3.69%, #C5DE90 175.41%);color: #FFF;
+  text-align: center;
+  border: none;
 
 /* Body */
-font-family: 'Quicksand', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 125% */
-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 .full-update-expanded {
   padding: 10px 20px;
   position: absolute;
-  bottom: 10%;
+  bottom: 0%;
   width: 320px;
-height: 154px;
-flex-shrink: 0;
-border-radius: 16px;
-background: linear-gradient(105deg, #9CA883 -3.69%, #C9D4AF 175.41%);
-/* Body */
-font-family: 'Quicksand', sans-serif;
-font-size: 14px;
-font-weight: 200;
-line-height: 20px; /* 125% */
-text-align: left;
-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  height: 154px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: linear-gradient(105deg, #5D6945 -3.69%, #C5DE90 175.41%);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 20px; /* 125% */
+  text-align: left;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+
 }
 
 .full-update span:hover {
@@ -266,7 +265,35 @@ transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
   color: #ffa34e; 
 }
 
+/* system tiles */
 
-.flag-tile {
+.power-system {
+  position: relative;
+  width: 385px;
+  height: 85px;
+  bottom: 0%;
+  top: 38%;
+  display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 6px;
+border: 2px solid #29423A;
+
+}
+
+.power-system-tile {
+  background: url("/src/Assets/Dashboard/1powerSystemDial.png") no-repeat center center;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+width: 85px;
+height: 85px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 100px;
+
+/* tile drop shadow 1 */
+box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
 
 }
