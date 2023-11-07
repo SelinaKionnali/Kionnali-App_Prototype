@@ -31,7 +31,14 @@ export default function Dashboard() {
 									isExpanded ? "full-update-expanded" : ""
 								}`}
 								onClick={handleToggle}>
-								{isExpanded ? `${expandedContent}` : "Full Update"}
+								{isExpanded ? (
+									<>
+										{expandedContent}
+										<button className="close-button">X Close</button>
+									</>
+								) : (
+									"Full Update"
+								)}
 							</button>
 						</div>
 					</div>

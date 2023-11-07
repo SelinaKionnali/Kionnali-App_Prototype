@@ -227,6 +227,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 20px; /* 125% */
+text-align: left;
 transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
@@ -235,6 +236,24 @@ transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
   opacity: 0.9;
   cursor: pointer;
 }
+
+.close-button {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  background: none;
+  border: none;
+  color: #FFF; /* Change as per your color scheme */
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #ffa34e; /* Change as per your color scheme */
+}
+
 
 .flag-tile {
 
