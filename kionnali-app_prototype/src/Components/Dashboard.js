@@ -17,7 +17,9 @@ export default function Dashboard() {
 						<button class="coffee-button"></button>
 						<button class="flag-button"></button>
 						<div className="roamstead-status">
+							<div className="sunflower-icon"></div>
 							<h4>Your Roamstead is looking good today.</h4>
+							<button className="full-update">Full Update</button>
 						</div>
 					</div>
 				</div>
