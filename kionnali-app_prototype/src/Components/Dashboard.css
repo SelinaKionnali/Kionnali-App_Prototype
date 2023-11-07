@@ -210,6 +210,24 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 20px; /* 125% */
+transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.full-update-expanded {
+  position: absolute;
+  bottom: 10%;
+  width: 320px;
+height: 154px;
+flex-shrink: 0;
+border-radius: 16px;
+background: linear-gradient(105deg, #9CA883 -3.69%, #C9D4AF 175.41%);
+/* Body */
+font-family: 'Quicksand', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 .full-update:hover {

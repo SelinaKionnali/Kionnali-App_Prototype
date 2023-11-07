@@ -1,9 +1,16 @@
 // Desc: Dashboard component
 import "./Dashboard.css";
-import { useHistory } from "react-router-dom"; // if using react-router
+import { useState } from "react";
 
 export default function Dashboard() {
-	let history = useHistory(); // if using react-router
+	const [isExpanded, setIsExpanded] = useState(false);
+
+	const handleToggle = () => {
+		setIsExpanded(!isExpanded);
+	};
+
+	const expandedContent =
+		"The weather for the next week is sunny with no upcoming extreme events. You will be net positive on energy and you have plenty of water in store. Your tomatoes are about a week from harvest!";
 
 	return (
 		<>
@@ -19,7 +26,13 @@ export default function Dashboard() {
 						<div className="roamstead-status">
 							<div className="sunflower-icon"></div>
 							<h4>Your Roamstead is looking good today.</h4>
-							<button className="full-update">Full Update</button>
+							<button
+								className={`full-update ${
+									isExpanded ? "full-update-expanded" : ""
+								}`}
+								onClick={handleToggle}>
+								{isExpanded ? `${expandedContent}` : "Full Update"}
+							</button>
 						</div>
 					</div>
 				</div>
