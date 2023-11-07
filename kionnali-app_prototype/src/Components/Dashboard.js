@@ -5,8 +5,14 @@ import { useState } from "react";
 export default function Dashboard() {
 	const [isExpanded, setIsExpanded] = useState(false);
 
-	const handleToggle = () => {
+	const handleToggle = (e) => {
+		e.stopPropagation();
 		setIsExpanded(!isExpanded);
+	};
+
+	const handleHighlight = (e) => {
+		e.stopPropagation();
+		console.log("highlight");
 	};
 
 	const expandedContent =
@@ -34,12 +40,18 @@ export default function Dashboard() {
 								{isExpanded ? (
 									<>
 										{expandedContent}
+										<br /> <br /> <br />
+										<button
+											className="tell-me-more"
+											onClick={handleHighlight}>
+											<span>Tell me more &gt;</span>
+										</button>
 										<button className="close-button">
 											<span>X Close</span>
 										</button>
 									</>
 								) : (
-									<span>"Full Update"</span>
+									<span>Full Update</span>
 								)}
 							</button>
 						</div>

@@ -214,6 +214,7 @@ transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 .full-update-expanded {
+  padding: 10px 20px;
   position: absolute;
   bottom: 10%;
   width: 320px;
@@ -223,26 +224,38 @@ border-radius: 16px;
 background: linear-gradient(105deg, #9CA883 -3.69%, #C9D4AF 175.41%);
 /* Body */
 font-family: 'Quicksand', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
+font-size: 14px;
+font-weight: 200;
 line-height: 20px; /* 125% */
 text-align: left;
 transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 .full-update span:hover {
-  color: #ffa34e; /* Change as per your color scheme */
+  color: #ffa34e;
   cursor: pointer;
 }
 
 .close-button {
   position: absolute;
-  bottom: 10px; /* Adjust as needed */
-  right: 10px; /* Adjust as needed */
+  bottom: 10px; 
+  right: 10px; 
   background: none;
   border: none;
-  color: #FFF; /* Change as per your color scheme */
+  color: #FFF; 
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tell-me-more {
+  position: absolute;
+  bottom: 10px; 
+  left: 10px; 
+  background: none;
+  border: none;
+  color: #FFF; 
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   cursor: pointer;
@@ -250,7 +263,7 @@ transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 .close-button span:hover {
-  color: #ffa34e; /* Change as per your color scheme */
+  color: #ffa34e; 
 }
 
 
