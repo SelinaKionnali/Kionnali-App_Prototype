@@ -34,10 +34,12 @@ export default function Dashboard() {
 								{isExpanded ? (
 									<>
 										{expandedContent}
-										<button className="close-button">X Close</button>
+										<button className="close-button">
+											<span>X Close</span>
+										</button>
 									</>
 								) : (
-									"Full Update"
+									<span>"Full Update"</span>
 								)}
 							</button>
 						</div>

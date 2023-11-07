@@ -231,9 +231,8 @@ text-align: left;
 transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
-.full-update:hover {
-  box-shadow: 0 0 15px rgb(255, 172, 70); /* Add a subtle shadow on hover */
-  opacity: 0.9;
+.full-update span:hover {
+  color: #ffa34e; /* Change as per your color scheme */
   cursor: pointer;
 }
 
@@ -250,7 +249,7 @@ transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
   transition: color 0.3s ease;
 }
 
-.close-button:hover {
+.close-button span:hover {
   color: #ffa34e; /* Change as per your color scheme */
 }
 
