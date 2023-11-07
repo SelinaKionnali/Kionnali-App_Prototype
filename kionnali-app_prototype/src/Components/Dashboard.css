@@ -1,8 +1,8 @@
 .container {
   overflow: hidden;
   position: relative;
-  width: 431px;
-  height: 868px;
+  width: 390px;
+  height: 844px;
   flex-shrink: 0;
   border-radius: 48px;
   overflow-y: auto;
@@ -12,7 +12,7 @@
 .dashboard {
   position: relative;
   background-image: url("/src/Assets/Dashboard/dashboardBG.png");
-  width: 431px;
+  width: 390px;
   height: 600px;
   flex-shrink: 0;
   border-radius: 48px;
@@ -26,7 +26,7 @@
   background: url("/src/Assets/Dashboard/DBroundedTopTile.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 440px;
+  width: 396px;
   height: 480px;
   border-top-left-radius: 100px; 
   border-top-right-radius: 100px;
@@ -149,8 +149,29 @@ overflow: hidden;
   opacity: 0.9;
 }
 
-.weather-tile {
+.roamstead-status {
+  position: absolute;
+  top: 35%;
+  left: 4%;
+  width: 360px;
+height: 118px;
+flex-shrink: 0;
+border-radius: var(--main-system-20-px, 20px);
+background: #EAEAEA;
+box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.05) inset;
+border: 2px solid red;
+}
 
+.roamstead-status h4 {
+  color: #3F462F;
+
+/* subtitles */
+font-family: Quicksand;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 141.176% */
+letter-spacing: 0.1px;
 }
 
 .flag-tile {

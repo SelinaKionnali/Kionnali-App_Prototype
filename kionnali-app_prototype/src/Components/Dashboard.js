@@ -16,10 +16,9 @@ export default function Dashboard() {
 						<button class="weather-button"></button>
 						<button class="coffee-button"></button>
 						<button class="flag-button"></button>
-
-						<div className="coffee-tile"></div>
-						<div className="weather-tile"></div>
-						<div className="flag-tile"></div>
+						<div className="roamstead-status">
+							<h4>Your Roamstead is looking good today.</h4>
+						</div>
 					</div>
 				</div>
 			</div>
