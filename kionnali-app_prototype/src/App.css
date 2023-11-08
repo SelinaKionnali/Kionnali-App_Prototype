@@ -23,6 +23,16 @@ body {
   border: 2px solid lightskyblue;
 }
 
+.top-screen {
+  position: absolute;
+  left: 28%;
+  width: 187.5px;
+  height: 32px;
+  border-radius: 0px 0px 24px 24px;
+  background: #000;
+  z-index: 10;
+}
+
 
 /* Base button styles */
 .btn {

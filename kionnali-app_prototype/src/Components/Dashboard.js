@@ -15,6 +15,11 @@ export default function Dashboard() {
 		console.log("highlight");
 	};
 
+	const handleClick = (e) => {
+		e.stopPropagation();
+		console.log("click");
+	};
+
 	const expandedContent =
 		"The weather for the next week is sunny with no upcoming extreme events. You will be net positive on energy and you have plenty of water in store. Your tomatoes are about a week from harvest!";
 
@@ -76,6 +81,20 @@ export default function Dashboard() {
 								<div className="system-status-box">
 									<button className="compost-system-tile"></button>
 								</div>
+							</div>
+							<div className="planning-container grid">
+								<div className="rainfall-tile grid-1">
+									<h5>Rainfall</h5>
+									<div
+										className="rainfall-tile-img"
+										onClick={handleClick}></div>
+									<p>No rainfall collection</p>
+									<button className="water-data-btn">
+										See water data &gt;{" "}
+									</button>
+								</div>
+								<div className="planning-box grid-2"></div>
+								<div className="harvest-tile grid-3"></div>
 							</div>
 						</div>
 					</div>

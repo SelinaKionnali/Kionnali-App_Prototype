@@ -1,5 +1,6 @@
 import { useHistory } from "react-router-dom"; // if using react-router
 import "./Home.css";
+import "../App.css";
 
 export default function Home() {
 	let history = useHistory(); // if using react-router

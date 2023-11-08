@@ -8,6 +8,7 @@ export default function App() {
 		<Router>
 			<div className="app">
 				<div className="iphone-container">
+					<div className="top-screen"></div>
 					<div className="btn btn-1"></div>
 					<div className="btn btn-2"></div>
 					<div className="btn lrg-btn"></div>
