@@ -26,7 +26,7 @@
   background: url("/src/Assets/Dashboard/DBroundedTopTile.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 396px;
+  width: 397px;
   height: 490px;
   border-top-left-radius: 100px; 
   border-top-right-radius: 100px;
@@ -150,41 +150,42 @@ overflow: hidden;
 }
 
 .roamstead-status-container {
-  position: relative;
-  border: #ffa34e solid 2px;
-  height: 100%;
-  top: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  
+  background-color: #FFF;
+  margin: 10% 0% 0% 0%;
+  width: 390px;
+  min-height: 600px;
 }
 
 .roamstead-status-box {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  top: 0%;
-  left: 4%;
+ position: relative;
+  margin: 0 auto;
   width: 360px;
-height: 118px;
-flex-shrink: 0;
-border-radius: var(--main-system-20-px, 20px);
-background: #EAEAEA;
-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.05) inset;
+  min-height: 118px;
+  flex-shrink: 0;
+  border-radius: var(--main-system-20-px, 20px);
+  background: #EAEAEA;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.05) inset;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 .sunflower-icon {
+margin: 20px;
+  padding: 0px;
   background: url("/src/Assets/Dashboard/SunflowerIcon.png") no-repeat center center;
-  position: absolute;
-  top: 22%;
-  left: 5%;
-  display: flex;
 width: 26px;
 height: 26px;
-justify-content: center;
-align-items: center;
 flex-shrink: 0;
 }
 
 .roamstead-status-box h4 {
+  position: absolute;
+  top: 0px;
+  left: 60px;
   color: #3F462F;
   width: 225px;
   text-align: left;
@@ -199,9 +200,7 @@ letter-spacing: 0.1px;
 }
 
 .full-update-btn {
-  position: absolute;
-  top: 65%;
-  right: 8%;
+  margin: 20px -150px 15px 0px;
   width: 113px;
   height: 32px;
   flex-shrink: 0;
@@ -216,16 +215,14 @@ letter-spacing: 0.1px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 125% */
-  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 .full-update-expanded {
   padding: 10px 20px;
-  position: absolute;
-  top: 65%;
-  right: 0%;
+  margin: 10px 0px 0px 0px;
   width: 360px;
-  height: 216px;
+  height: 200px;
   flex-shrink: 0;
   border-radius: 0px 0px 16px 16px;
   background: linear-gradient(105deg, #5D6945 -3.69%, #C5DE90 175.41%);
@@ -234,8 +231,7 @@ letter-spacing: 0.1px;
   font-weight: 200;
   line-height: 20px; /* 125% */
   text-align: left;
-  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
-  z-index: 10;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 /* .roamstead-status-box-expanded {
@@ -307,7 +303,7 @@ letter-spacing: 0.1px;
 /* system tiles */
 
 .system-status-frame {
-  position: absolute;
+  position: relative;
   width: 390px;
   height: 85px;
   top: 25%;
@@ -315,7 +311,6 @@ letter-spacing: 0.1px;
 justify-content: center;
 align-items: flex-start;
 gap: 6px;
-border: 2px solid palevioletred;
 }
 
 .system-status-box {
