@@ -268,9 +268,9 @@ letter-spacing: 0.1px;
 
 /* system tiles */
 
-.power-system {
+.system-status-frame {
   position: relative;
-  width: 385px;
+  width: 390px;
   height: 85px;
   bottom: 0%;
   top: 38%;
@@ -278,8 +278,17 @@ letter-spacing: 0.1px;
 justify-content: center;
 align-items: flex-start;
 gap: 6px;
-border: 2px solid #29423A;
 
+}
+
+.system-status-box {
+  position: relative;
+  width: 85px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border-radius: 0px 0px var(--main-system-20-px, 20px) var(--main-system-20-px, 20px);
 }
 
 .power-system-tile {
@@ -293,8 +302,71 @@ border: 2px solid #29423A;
   align-items: center;
   gap: 10px;
   border-radius: 100px;
+  border: none ;
+  cursor: pointer;
+  overflow: hidden;
+  
 
 /* tile drop shadow 1 */
   box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
+} 
 
+.thermal-system-tile {
+  background: url("/src/Assets/Dashboard/2thermalSystemIcon.png") no-repeat center center;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  width: 85px;
+  height: 85px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: none ;
+  cursor: pointer;
+  overflow: hidden;
+  
+
+/* tile drop shadow 1 */
+  box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
+} 
+
+.water-system-tile {
+  background: url("/src/Assets/Dashboard/3waterSystemIcon.png") no-repeat center center;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  width: 85px;
+  height: 85px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: none ;
+  cursor: pointer;
+  overflow: hidden;
+  
+
+/* tile drop shadow 1 */
+  box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
+} 
+
+.compost-system-tile {
+  background: url("/src/Assets/Dashboard/4compostSystemIcon.png") no-repeat center center;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  width: 85px;
+  height: 85px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: none ;
+  cursor: pointer;
+  overflow: hidden;
+  
+
+/* tile drop shadow 1 */
+  box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
 } 

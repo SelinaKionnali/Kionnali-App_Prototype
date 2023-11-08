@@ -55,8 +55,19 @@ export default function Dashboard() {
 								)}
 							</button>
 						</div>
-						<div className="power-system">
-							<button className="power-system-tile"></button>
+						<div className="system-status-frame">
+							<div className="system-status-box">
+								<button className="power-system-tile"></button>
+							</div>
+							<div className="system-status-box">
+								<button className="thermal-system-tile"></button>
+							</div>
+							<div className="system-status-box">
+								<button className="water-system-tile"></button>
+							</div>
+							<div className="system-status-box">
+								<button className="compost-system-tile"></button>
+							</div>
 						</div>
 					</div>
 				</div>
