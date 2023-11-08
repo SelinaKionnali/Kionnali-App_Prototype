@@ -29,11 +29,11 @@ export default function Dashboard() {
 						<button class="weather-button"></button>
 						<button class="coffee-button"></button>
 						<button class="flag-button"></button>
-						<div className="roamstead-status">
+						<div className="roamstead-status-box">
 							<div className="sunflower-icon"></div>
 							<h4>Your Roamstead is looking good today.</h4>
 							<button
-								className={`full-update ${
+								className={`full-update-btn ${
 									isExpanded ? "full-update-expanded" : ""
 								}`}
 								onClick={handleToggle}>
