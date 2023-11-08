@@ -10,13 +10,13 @@
 }
 
 .dashboard {
-  position: relative;
+  position: absolute;
   background-image: url("/src/Assets/Dashboard/dashboardBG.png");
   width: 390px;
-  height: 600px;
+  height: 610px;
+  top: -5%;
   flex-shrink: 0;
   border-radius: 48px;
-  background-size: cover; /* Cover the entire container */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* No image repetition */  
 }
@@ -27,7 +27,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 396px;
-  height: 480px;
+  height: 490px;
   border-top-left-radius: 100px; 
   border-top-right-radius: 100px;
   position: absolute; 
