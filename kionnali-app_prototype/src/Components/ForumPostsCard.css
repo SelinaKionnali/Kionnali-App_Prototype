@@ -1,0 +1,120 @@
+.card-container {
+  margin: 0 auto;
+  display: flex;
+  width: 335px;
+  min-height: 230px;
+  padding: 8px 14px;
+  justify-content: center;
+  border-radius: 20px;
+  background: #FFF;
+  
+
+/* tile drop shadow 1 */
+box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
+}
+
+
+.card-body {
+}
+
+.card-title {
+  margin: 10px 10px 20px 10px;
+  display: flex;
+  width: 326px;
+  height: 26px;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  color: var(--1---Primary-Color, #658229);
+  font-family: Quicksand;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 141.176% */
+  letter-spacing: 0.1px;
+  text-align: left;
+
+}
+
+.frame1 {
+  display: flex;
+align-items: center;
+gap: 17px;
+width: 180px;
+height: 54px;
+}
+
+.user-img {
+  background: url(/src/Assets/Dashboard/DBuserImg.png);
+  width: 52px;
+height: 54px;
+margin: 10px -15px 10px 10px;
+
+}
+
+.frame2 {
+  display: flex;
+height: 34px;
+flex-direction: column;
+align-items: flex-start;
+width: 111px;
+height: 34px;
+margin: 0 auto;
+}
+
+.user-name {
+  display: flex;
+  width: 56px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #658229;
+  font-family:monospace Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26.206px; /* 170.588% */
+  letter-spacing: -0.452px;
+  text-align: left;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
+.user-logged-in {
+  color: #666;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24.275px; /* 202.294% */
+  letter-spacing: -0.419px;
+  margin-left: 10px;
+
+}
+
+.card-text {
+  margin: 10px;
+  color: #000;
+  width: 263px;
+  color: var(--base-black, #000);
+
+/* Body */
+font-family: Quicksand;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+text-align: left;
+}
+
+.card-text span {
+  color: #658229;
+
+  /* Body */
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */}
+

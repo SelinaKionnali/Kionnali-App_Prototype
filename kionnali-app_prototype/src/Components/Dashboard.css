@@ -26,7 +26,7 @@
   background: url("/src/Assets/Dashboard/DBroundedTopTile.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 397px;
+  width: 398px;
   height: 490px;
   border-top-left-radius: 100px; 
   border-top-right-radius: 100px;
@@ -36,8 +36,8 @@
   left: -1%;
   right: 0;
   padding: 0;
-
-
+  fill: linear-gradient(181deg, #FFF 49.92%, #EDEDED 80.94%);
+  filter: drop-shadow(0px -4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .welcome {
@@ -155,10 +155,10 @@ overflow: hidden;
   align-items: flex-start;
   flex-direction: column;
   
-  background-color: #FFF;
-  margin: 10% 0% 0% 0%;
+  background: linear-gradient(#FFF, #EAEAEA);  margin: 10% 0% 0% 0%;
   width: 395px;
   min-height: 600px;
+  z-index: 0;
 }
 
 .roamstead-status-box {
@@ -403,12 +403,9 @@ gap: 6px;
 
 .planning-container {
   display: grid;
-  grid-auto-flow: row dense; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
-  grid-template-areas: 
-    ". ."
-    ". .";
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two columns with equal width */
+  grid-template-rows: auto auto; /* two rows where height is determined by content */
   width: 360px;
   height: 360px;
   gap: 8px;
@@ -416,6 +413,7 @@ gap: 6px;
 }
 
 .rainfall-tile{
+  position: relative;
   display: inline-grid;
   width: 176px;
 height: 176px;
@@ -442,16 +440,29 @@ letter-spacing: 0.1px;
 text-align: left;
 }
 
+.three-dots {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  background: url("/src/Assets/Dashboard/threeDots.png") no-repeat center center;
+  width: 4px;
+height: 22px;
+flex-shrink: 0;
+
+}
+
 /* later change to text with img*/
 .rainfall-tile-img {
-  background: url("/src/Assets/Dashboard/rainfall.png") no-repeat center center;
-  width: 115.2px;
-height: 60px;
+  
+  background: url("/src/Assets/Dashboard/RainCloud.png") no-repeat center center;
+  width: 26.4px;
+height: 28.931px;
 flex-shrink: 0;
 margin: 0px 0px 0px 10px;
 padding: 0px;
 border: none;
 cursor: pointer;
+overflow: hidden;
 }
 
 .rainfall-tile p {
@@ -467,6 +478,43 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 20px; /* 125% */
+}
+
+.zero-mm {
+  position: absolute;
+  top: 25%;
+}
+
+.rainfall-tile span {
+  color: #435A10;
+
+}
+
+.zero {
+  width: 61.6px;
+height: 86.792px;
+flex-shrink: 0;
+color: var(--Dark-Green, #435A10);
+text-align: center;
+font-family: Quicksand;
+font-size: 48px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
+
+.mm {
+  width: 46.2px;
+  height: 36.164px;
+  flex-shrink: 0;
+  color: var(--Dark-Green, #435A10);
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .water-data-btn {
@@ -492,12 +540,17 @@ background-color: #FFF;
 
 
 .planning-box{
-  border: lightseagreen 2px solid;
   display: inline-grid;
-
+  background: url("/src/Assets/Dashboard/DBplanningGroup.png") no-repeat center center;
+  grid-row: 1 / span 2; /* this will make it stretch across two rows */
+  grid-column: 2 / span 1; /* this will make it stretch across one column */
 }
 
 .harvest-tile {
-  border: lightcoral 2px solid;
   display: inline-grid;
+  background: url("/src/Assets/Dashboard/DBharvestGroup.png") no-repeat center center;
+  grid-column: 1 / span 1; /* this will make it stretch across one column */
+  width: 176px;
+height: 176px;
+flex-shrink: 0;
 }
