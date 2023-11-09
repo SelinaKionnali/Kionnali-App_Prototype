@@ -6,7 +6,6 @@
   flex-shrink: 0;
   border-radius: 48px;
   overflow-y: auto;
-
 }
 
 .dashboard {
@@ -27,7 +26,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 398px;
-  height: 490px;
+  min-height: 490px;
   border-top-left-radius: 100px; 
   border-top-right-radius: 100px;
   position: absolute; 
@@ -157,7 +156,7 @@ overflow: hidden;
   
   background: linear-gradient(#FFF, #EAEAEA);  margin: 10% 0% 0% 0%;
   width: 395px;
-  min-height: 600px;
+  min-height: 1000px;
   z-index: 0;
 }
 

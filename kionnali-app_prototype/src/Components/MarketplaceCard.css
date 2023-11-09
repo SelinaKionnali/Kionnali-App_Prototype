@@ -3,7 +3,7 @@
   margin: 0 auto;
   margin-top: 15px;
   width: 335px;
-  min-height: 380px;
+  height: auto;
   padding: 8px 14px;
   justify-content: center;
   border-radius: 20px;
@@ -51,3 +51,11 @@ box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 
   gap: var(--main-system-4-px, 4px);
   margin: -20px 0px 0px 110px;
 }
+
+.card-text span {
+  color: var(--base-black, #000);
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */}

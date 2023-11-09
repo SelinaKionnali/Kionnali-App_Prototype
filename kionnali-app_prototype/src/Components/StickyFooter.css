@@ -1,0 +1,11 @@
+.sticky-footer {
+  position: fixed;
+  bottom: 57px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 100; /* To make sure it stays above other content */
+}

@@ -4,6 +4,7 @@ import { useState } from "react";
 import ForumPostsCard from "./ForumPostsCard";
 import MarketplaceCard from "./MarketplaceCard";
 import SystemPlanning from "./SystemPlanning";
+import StickyFooter from "./StickyFooter";
 
 export default function Dashboard(props) {
 	const [isExpanded, setIsExpanded] = useState(false);
@@ -91,6 +92,9 @@ export default function Dashboard(props) {
 						</div>
 					</div>
 				</div>
+				<footer>
+					<StickyFooter />
+				</footer>
 			</div>
 		</>
 	);

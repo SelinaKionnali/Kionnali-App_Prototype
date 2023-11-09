@@ -21,7 +21,7 @@ const MarketplaceCard = () => {
 							alt="pagination"
 						/>
 						<br />
-						<p>First aid kit</p>
+						<p>First Aid Kit</p>
 						<br />
 						<br />
 					</p>
