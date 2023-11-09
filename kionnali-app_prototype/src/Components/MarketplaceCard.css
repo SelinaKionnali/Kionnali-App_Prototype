@@ -1,0 +1,44 @@
+.card-container {
+  display: flex;
+  width: 335px;
+  min-height: 230px;
+  padding: 8px 14px;
+  justify-content: center;
+  border-radius: 20px;
+  background: #FFF;
+  
+
+/* tile drop shadow 1 */
+box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
+}
+
+
+.card-body {
+}
+
+.card-title {
+  margin: 10px 10px 10px 10px;
+  display: flex;
+  width: 326px;
+  height: 26px;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  color: var(--1---Primary-Color, #658229);
+  font-family: Quicksand;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 141.176% */
+  letter-spacing: 0.1px;
+  text-align: left;
+
+}
+
+.marketplace-image {
+  display: flex;
+  margin: 0 auto;
+  width: 331px;
+  height: 256px;
+  border-radius: 18.31px;
+}

@@ -1,6 +1,5 @@
 import { useHistory } from "react-router-dom"; // if using react-router
 import "./Home.css";
-import "../App.css";
 
 export default function Home() {
 	let history = useHistory(); // if using react-router
@@ -15,11 +14,19 @@ export default function Home() {
 			<div className="top-screen"></div>
 			<div className="logo"></div>
 			<div className="brand"></div>
-			<div className="welcome"></div>
-			<div className="off-grid"></div>
-			<div
-				className="button-container"
-				onClick={handleClick}></div>
+			<div className="home-welcome"></div>
+			<div className="button-container">
+				<button
+					className="sign-in-button"
+					onClick={handleClick}>
+					Sign In
+				</button>
+				<button
+					className="sign-up-button"
+					onClick={handleClick}>
+					Sign Up
+				</button>
+			</div>
 		</div>
 	);
 }

@@ -2,6 +2,7 @@
 import "./Dashboard.css";
 import { useState } from "react";
 import ForumPostsCard from "./ForumPostsCard";
+import MarketplaceCard from "./MarketplaceCard";
 
 export default function Dashboard() {
 	const [isExpanded, setIsExpanded] = useState(false);
@@ -103,6 +104,7 @@ export default function Dashboard() {
 								<div className="harvest-tile grid-3"></div>
 							</div>
 							<ForumPostsCard />
+							<MarketplaceCard />
 						</div>
 					</div>
 				</div>
