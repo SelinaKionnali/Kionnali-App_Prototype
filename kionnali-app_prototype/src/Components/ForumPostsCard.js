@@ -1,5 +1,8 @@
 import React from "react";
 import "./ForumPostsCard.css";
+import DBcommentIcon from "../Assets/Dashboard/DBcommentIcon.png";
+import DBheartIcon from "../Assets/Dashboard/DBheartIcon.png";
+import DBsendIcon from "../Assets/Dashboard/DBsendIcon.png";
 
 const ForumPostsCard = () => {
 	return (
@@ -24,6 +27,30 @@ const ForumPostsCard = () => {
 						<br />
 						<span>#energy &nbsp;#thermal</span>
 					</p>
+					<div class="card-footer">
+						<span class="comments">
+							<button className="comment-button">
+								<img
+									src={DBcommentIcon}
+									alt="Comments"
+								/>{" "}
+								&nbsp;320
+							</button>
+						</span>
+						<button class="like-button">
+							<img
+								src={DBheartIcon}
+								alt="Heart"
+							/>{" "}
+							save to collection
+						</button>
+						<span class="save">
+							<img
+								src={DBsendIcon}
+								alt="Save"
+							/>
+						</span>
+					</div>{" "}
 				</div>
 			</div>
 		</div>

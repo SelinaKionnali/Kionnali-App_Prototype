@@ -45,7 +45,7 @@ height: 54px;
 }
 
 .user-img {
-  background: url(/src/Assets/Dashboard/DBuserImg.png);
+  background: url(/src/Assets/Dashboard/DBuserImg.png) ;
   width: 52px;
 height: 54px;
 margin: 10px -15px 10px 10px;
@@ -118,3 +118,54 @@ text-align: left;
   font-weight: 400;
   line-height: 20px; /* 125% */}
 
+.card-text span:hover {
+  color: #94c03e;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.frame3 {
+  border: #94c03e solid 1px;
+  width: 283px;
+  height: 37px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 14px; /* Adjust size as needed */
+}
+
+.comments,
+.like-button,
+.save {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between icon and text */
+}
+
+.comments img,
+.like-button img,
+.save img {
+  width: 30px;
+  height: 30px;
+}
+
+.like-button,
+.comment-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.like-button:hover {
+  color: #658229;
+}
+
+.comment-button:hover {
+  color: #658229;
+}
