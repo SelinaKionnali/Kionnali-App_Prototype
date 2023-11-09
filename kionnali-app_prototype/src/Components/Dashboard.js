@@ -3,8 +3,9 @@ import "./Dashboard.css";
 import { useState } from "react";
 import ForumPostsCard from "./ForumPostsCard";
 import MarketplaceCard from "./MarketplaceCard";
+import SystemPlanning from "./SystemPlanning";
 
-export default function Dashboard() {
+export default function Dashboard(props) {
 	const [isExpanded, setIsExpanded] = useState(false);
 
 	const handleToggle = (e) => {
@@ -84,25 +85,7 @@ export default function Dashboard() {
 									<button className="compost-system-tile"></button>
 								</div>
 							</div>
-							<div className="planning-container grid">
-								<div className="rainfall-tile grid-1">
-									<h5>Rainfall</h5>
-									<div className="three-dots"></div>
-									<div
-										className="rainfall-tile-img"
-										onClick={handleClick}></div>
-									<p className="zero-mm">
-										<span className="zero">0 </span>
-										<span className="mm">mm</span>
-									</p>
-									<p>No rainfall collection</p>
-									<button className="water-data-btn">
-										See water data &gt;{" "}
-									</button>
-								</div>
-								<div className="planning-box grid-2"></div>
-								<div className="harvest-tile grid-3"></div>
-							</div>
+							<SystemPlanning handleClick={handleClick} />
 							<ForumPostsCard />
 							<MarketplaceCard />
 						</div>

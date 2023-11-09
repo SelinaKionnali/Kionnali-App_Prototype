@@ -1,9 +1,10 @@
 import "./MarketplaceCard.css";
 import DBmarketplaceImage from "../Assets/Dashboard/DBmarketplaceImage.png";
+import DBpagination from "../Assets/Dashboard/DBpagination.png";
 
 const MarketplaceCard = () => {
 	return (
-		<div className="card-container">
+		<div className="marketplace-card-container">
 			<div className="card">
 				<div className="card-body">
 					<h5 className="card-title">Featured on Marketplace</h5>
@@ -14,8 +15,13 @@ const MarketplaceCard = () => {
 						/>
 					</div>
 					<p className="card-text">
-						<span>$30</span>
-						First aid kit
+						<span>£39.45</span>
+						<img
+							src={DBpagination}
+							alt="pagination"
+						/>
+						<br />
+						<p>First aid kit</p>
 						<br />
 						<br />
 					</p>
