@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from "./Components/Home";
 import "./App.css";
 import Dashboard from "./Components/Dashboard";
+import CommandCenter from "./Components/CommandCenter";
 
 export default function App() {
 	return (
@@ -20,6 +21,10 @@ export default function App() {
 					<Route
 						path="/dashboard"
 						component={Dashboard}
+					/>
+					<Route
+						path="/command-center"
+						component={CommandCenter}
 					/>
 				</div>
 			</div>

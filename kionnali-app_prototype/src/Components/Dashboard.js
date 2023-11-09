@@ -1,17 +1,40 @@
 // Desc: Dashboard component
 import "./Dashboard.css";
+import "../Components/CommandCenter.css";
 import { useState } from "react";
+import { useHistory } from "react-router-dom"; // if using react-router
 import ForumPostsCard from "./ForumPostsCard";
 import MarketplaceCard from "./MarketplaceCard";
 import SystemPlanning from "./SystemPlanning";
 import StickyFooter from "./StickyFooter";
 
 export default function Dashboard(props) {
+	let history = useHistory(); // if using react-router
+
 	const [isExpanded, setIsExpanded] = useState(false);
 
-	const handleToggle = (e) => {
+	const toggleRoamsteadStatus = (e) => {
 		e.stopPropagation();
 		setIsExpanded(!isExpanded);
+	};
+
+	// Click handlers
+	const handleWeatherButtonClick = () => {
+		console.log("Weather button clicked");
+		// Logic for weather button
+	};
+
+	const handleMorningModeClick = () => {
+		// Navigate to Dashboard
+		history.push("/command-center");
+
+		console.log("Morning mode button clicked");
+		// Logic for morning mode button
+	};
+
+	const handlePreparationClick = () => {
+		console.log("Preparation button clicked");
+		// Logic for preparation button
 	};
 
 	const handleHighlight = (e) => {
@@ -19,9 +42,10 @@ export default function Dashboard(props) {
 		console.log("highlight");
 	};
 
-	const handleClick = (e) => {
+	const handleRainfallClick = (e) => {
 		e.stopPropagation();
-		console.log("click");
+		console.log("Rainfall click");
+		// Logic for rainfall click
 	};
 
 	const expandedContent =
@@ -37,13 +61,16 @@ export default function Dashboard(props) {
 					<div className="rounded-tile">
 						<button
 							className="weather-button"
-							aria-label="Weather Information"></button>
+							aria-label="Weather Information"
+							onClick={handleWeatherButtonClick}></button>
 						<button
 							className="coffee-button"
-							aria-label="Morning Mode"></button>
+							aria-label="Morning Mode"
+							onClick={handleMorningModeClick}></button>
 						<button
 							className="flag-button"
-							aria-label="Preparation"></button>
+							aria-label="Preparation"
+							onClick={handlePreparationClick}></button>
 
 						<div className="roamstead-status-container">
 							<div className="roamstead-status-box">
@@ -53,7 +80,7 @@ export default function Dashboard(props) {
 									className={`full-update-btn ${
 										isExpanded ? "full-update-expanded" : ""
 									}`}
-									onClick={handleToggle}>
+									onClick={toggleRoamsteadStatus}>
 									{isExpanded ? (
 										<>
 											{expandedContent}
@@ -86,7 +113,7 @@ export default function Dashboard(props) {
 									<button className="compost-system-tile"></button>
 								</div>
 							</div>
-							<SystemPlanning handleClick={handleClick} />
+							<SystemPlanning handleClick={handleRainfallClick} />
 							<ForumPostsCard />
 							<MarketplaceCard />
 						</div>

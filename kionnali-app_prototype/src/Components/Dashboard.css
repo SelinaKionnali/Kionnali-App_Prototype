@@ -6,6 +6,7 @@
   flex-shrink: 0;
   border-radius: 48px;
   overflow-y: auto;
+  background-color: #EDEDED;
 }
 
 .dashboard {

@@ -9,7 +9,7 @@ export default function SystemPlanning(props) {
 				<div className="three-dots"></div>
 				<div
 					className="rainfall-tile-img"
-					onClick={props.handleClick}></div>
+					onClick={props.handleRainfallClick}></div>
 				<p className="zero-mm">
 					<span className="zero">0 </span>
 					<span className="mm">mm</span>
