@@ -61,4 +61,11 @@
 height: 99px;
 flex-shrink: 0;
 margin: -120% 0% 0% 0%;
+cursor: pointer;
 }
+
+.cc-rounded-tile img:hover {
+  opacity: 0.8;
+}
+
+

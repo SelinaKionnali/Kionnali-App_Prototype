@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom"; // if using react-router
 import ForumPostsCard from "./ForumPostsCard";
 import MarketplaceCard from "./MarketplaceCard";
 import SystemPlanning from "./SystemPlanning";
-import StickyFooter from "./StickyFooter";
+import "../Components/StickyFooter.css";
 
 export default function Dashboard(props) {
 	let history = useHistory(); // if using react-router
@@ -20,21 +20,23 @@ export default function Dashboard(props) {
 
 	// Click handlers
 	const handleWeatherButtonClick = () => {
+		history.push("/command-center");
+
 		console.log("Weather button clicked");
 		// Logic for weather button
 	};
 
 	const handleMorningModeClick = () => {
-		// Navigate to Dashboard
+		// Navigate to command center
 		history.push("/command-center");
 
 		console.log("Morning mode button clicked");
-		// Logic for morning mode button
 	};
 
 	const handlePreparationClick = () => {
+		history.push("/command-center");
+
 		console.log("Preparation button clicked");
-		// Logic for preparation button
 	};
 
 	const handleHighlight = (e) => {
@@ -44,8 +46,9 @@ export default function Dashboard(props) {
 
 	const handleRainfallClick = (e) => {
 		e.stopPropagation();
+		history.push("/command-center");
+
 		console.log("Rainfall click");
-		// Logic for rainfall click
 	};
 
 	const expandedContent =
@@ -119,9 +122,6 @@ export default function Dashboard(props) {
 						</div>
 					</div>
 				</div>
-				<footer>
-					<StickyFooter />
-				</footer>
 			</div>
 		</>
 	);
