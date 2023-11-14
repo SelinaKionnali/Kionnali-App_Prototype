@@ -1,0 +1,38 @@
+.menu-container {
+  display: flex;
+align-items: flex-start;
+gap: 19px;
+color: #658229;
+font-family: Quicksand;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 141.176% */
+letter-spacing: 0.1px;
+
+}
+
+.menu-item {
+  
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+
+.menu-slider {
+ background-color: #658229;
+  height: 100%;
+  border-radius: 10px;
+  width: calc(100% / 4);
+  z-index: 1;
+  bottom: 0; /* Align the slider to the bottom of the menu items */
+  transition: transform 0.5s ease-out; /* Animate the transform property */
+}
+
+.active {
+  color: #FFC42C;
+  background-color: #658229;
+}
+

@@ -2,6 +2,7 @@ import "../Components/CommandCenter.css";
 import yellowCircle from "../Assets/CommandCenter/yellowCircle.png";
 import { useHistory } from "react-router-dom"; // if using react-router
 import ModeTiles from "./ModeTiles";
+import Menu from "./Menu";
 
 export default function CommandCenter() {
 	let history = useHistory(); // if using react-router
@@ -21,9 +22,11 @@ export default function CommandCenter() {
 								onClick={(e) => handleDashboardClick(e)}
 							/>
 						</div>
+						<h2>Modes</h2>
 						<div className="modes">
 							<ModeTiles />
 						</div>
+						<Menu />
 					</div>
 				</div>
 			</div>

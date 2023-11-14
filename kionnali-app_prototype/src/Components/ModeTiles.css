@@ -1,12 +1,32 @@
+
+
 .modes {
   width: 389px;
   height: 180px;
   border: 1px solid blue;
-  margin: 50px;
+  margin: 0px;
   scroll-behavior: smooth;
   overflow-y: scroll;
   display: flex;
 
+}
+
+ h2 {
+  margin: 10px 0px 0px 0px;
+  margin-left: 0px;
+  border: 1px solid red;
+  width: 84px;
+  height: 24px;
+  color: var(--1---Primary-Color, #658229);
+  text-align: center;
+  
+  /* subtitles */
+  font-family: Quicksand;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 141.176% */
+  letter-spacing: 0.1px;
 }
 
 .slider {
