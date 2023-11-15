@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Menu.css";
+import TileLarge from "./TileLarge";
 
 export default function Menu() {
 	const [active, setActive] = useState("Shell"); // "Shell" is the default active menu item
@@ -11,16 +12,22 @@ export default function Menu() {
 	};
 
 	return (
-		<div className="menu-container">
-			{menuHeadings.map((heading) => (
-				<div
-					key={heading}
-					className={`menu-item ${active === heading ? "active" : ""}`}
-					onClick={() => handleClick(heading)}>
-					{heading}
-				</div>
-			))}
-			<div className={`menu-slider ${active}`}></div>
-		</div>
+		<>
+			<div className="menu-container">
+				{menuHeadings.map((heading) => (
+					<div
+						key={heading}
+						className={`menu-item ${active === heading ? "active" : ""}`}
+						onClick={() => handleClick(heading)}>
+						{heading}
+					</div>
+				))}
+				<div className={`menu-slider ${active}`}></div>
+			</div>
+			<div className="tile-large-container">
+				<TileLarge />
+				<TileLarge />
+			</div>
+		</>
 	);
 }

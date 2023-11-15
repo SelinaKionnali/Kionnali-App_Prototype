@@ -1,0 +1,26 @@
+.tile-large-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-shrink: 0;
+  height: 100%;
+  border: greenyellow 1px solid;
+  
+
+}
+
+.large-tile {
+display: flex;
+  margin: 10px;
+width: 330px;
+padding: 8px 23px 142px 16px;
+align-items: center;
+flex-shrink: 0;
+border-radius: var(--main-system-20-px, 20px);
+background: #FFF;
+border: greenyellow 1px solid;
+
+/* tile drop shadow 1 */
+box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
+}
