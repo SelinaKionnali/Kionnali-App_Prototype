@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Menu.css";
 import TileLarge from "./TileLarge";
 import TileNarrow from "./TileNarrow";
+import ShellPage from "./ShellPage";
 
 export default function Menu() {
 	const [active, setActive] = useState("Shell"); // "Shell" is the default active menu item
@@ -25,12 +26,7 @@ export default function Menu() {
 				))}
 				<div className={`menu-slider ${active}`}></div>
 			</div>
-			<div className="tile-large-container">
-				<TileLarge />
-				<TileLarge />
-				<TileNarrow />
-				<TileLarge />
-			</div>
+			<ShellPage />
 		</>
 	);
 }
