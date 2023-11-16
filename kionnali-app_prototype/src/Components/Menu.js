@@ -8,6 +8,7 @@ import KitchenPage from "./KitchenPage";
 export default function Menu() {
 	const [active, setActive] = useState("Shell"); // "Shell" is the default active menu item
 	const [page, showPage] = useState("ShellPage"); // "ShellPage" is the default page
+	const [sliderPosition, setSliderPosition] = useState(-8);
 
 	const menuHeadings = ["Shell", "Living", "Dining", "Kitchen"];
 
@@ -20,6 +21,7 @@ export default function Menu() {
 	const handleClick = (heading) => {
 		setActive(heading);
 		selectPage(pages[menuHeadings.indexOf(heading)]); // select the page that corresponds to the menu item
+		setSliderPosition(menuHeadings.indexOf(heading) * 75); // move the slider to the correct position
 	};
 
 	return (
@@ -33,7 +35,9 @@ export default function Menu() {
 						{heading}
 					</div>
 				))}
-				<div className={`menu-slider ${active}`}></div>
+				<div
+					className="menu-slider"
+					style={{ transform: `translateX(${sliderPosition}px)` }}></div>{" "}
 			</div>
 			{page === "ShellPage" && <ShellPage />}
 			{page === "LivingPage" && <LivingPage />}
