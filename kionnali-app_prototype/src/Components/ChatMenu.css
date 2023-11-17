@@ -1,0 +1,46 @@
+.button-frame {
+  display: flex;
+  align-items: flex-start;
+  gap: 19px;
+  color: #658229;
+  font-family: Quicksand;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 141.176% */
+  letter-spacing: 0.1px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.chat-menu-item {
+  
+  cursor: pointer;
+  padding: 10px 8px;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+
+.chat-menu-slider {
+ background-color: #658229;
+  height: 100%;
+  border-radius: 10px;
+  width: calc(100% / 3);
+  z-index: 1;
+  bottom: 0; /* Align the slider to the bottom of the menu items */
+  transition: transform 0.5s, width 0.5s; /* Animate the transform property */
+  position: absolute;
+  
+border-radius: var(--main-system-10-px, 10px);
+
+/* tile drop shadow 1 */
+box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
+
+}
+
+.active {
+  color: #FFC42C;
+  
+}
+
