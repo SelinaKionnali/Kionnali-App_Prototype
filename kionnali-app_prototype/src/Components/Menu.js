@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Menu.css";
 import ShellPage from "./ShellPage";
 import LivingPage from "./LivingPage";
@@ -8,7 +8,33 @@ import KitchenPage from "./KitchenPage";
 export default function Menu() {
 	const [active, setActive] = useState("Shell"); // "Shell" is the default active menu item
 	const [page, showPage] = useState("ShellPage"); // "ShellPage" is the default page
-	const [sliderPosition, setSliderPosition] = useState(-8);
+	const menuItemRefs = useRef([]); // Create an array of refs for each menu item
+	const [sliderStyle, setSliderStyle] = useState({}); // Style for the slider
+
+	// Function to assign refs
+	const setRefs = (element, index) => {
+		menuItemRefs.current[index] = element;
+	};
+
+	useEffect(() => {
+		console.log("Menu Items Refs:", menuItemRefs.current); // Check if refs are correctly set
+
+		const activeIndex = menuHeadings.indexOf(active);
+		const activeItem = menuItemRefs.current[activeIndex];
+		console.log("Active Item:", activeItem); // Check the active item
+
+		if (activeItem) {
+			const { left, width } = activeItem.getBoundingClientRect();
+			const containerLeft =
+				menuItemRefs.current[0].getBoundingClientRect().left;
+			console.log("Left, Width, ContainerLeft:", left, width, containerLeft); // Check calculated positions
+
+			setSliderStyle({
+				width: `${width}px`,
+				transform: `translateX(${left - containerLeft}px)`,
+			});
+		}
+	}, [active]);
 
 	const menuHeadings = ["Shell", "Living", "Dining", "Kitchen"];
 
@@ -21,15 +47,15 @@ export default function Menu() {
 	const handleClick = (heading) => {
 		setActive(heading);
 		selectPage(pages[menuHeadings.indexOf(heading)]); // select the page that corresponds to the menu item
-		setSliderPosition(menuHeadings.indexOf(heading) * 75); // move the slider to the correct position
 	};
 
 	return (
 		<>
 			<div className="menu-container">
-				{menuHeadings.map((heading) => (
+				{menuHeadings.map((heading, index) => (
 					<div
 						key={heading}
+						ref={(el) => setRefs(el, index)} // Set ref using setRefs function
 						className={`menu-item ${active === heading ? "active" : ""}`}
 						onClick={() => handleClick(heading)}>
 						{heading}
@@ -37,7 +63,7 @@ export default function Menu() {
 				))}
 				<div
 					className="menu-slider"
-					style={{ transform: `translateX(${sliderPosition}px)` }}></div>{" "}
+					style={sliderStyle}></div>{" "}
 			</div>
 			{page === "ShellPage" && <ShellPage />}
 			{page === "LivingPage" && <LivingPage />}

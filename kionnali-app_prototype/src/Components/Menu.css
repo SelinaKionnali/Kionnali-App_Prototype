@@ -1,7 +1,7 @@
 .menu-container {
   display: flex;
 align-items: flex-start;
-gap: 17px;
+gap: 19px;
 color: #658229;
 font-family: Quicksand;
 font-size: 17px;
@@ -28,7 +28,7 @@ position: relative;
   width: calc(100% / 4);
   z-index: 1;
   bottom: 0; /* Align the slider to the bottom of the menu items */
-  transition: transform 0.5s; /* Animate the transform property */
+  transition: transform 0.5s, width 0.5s; /* Animate the transform property */
   position: absolute;
 }
 

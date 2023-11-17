@@ -9,6 +9,7 @@ import "./App.css";
 import Dashboard from "./Components/Dashboard";
 import CommandCenter from "./Components/CommandCenter";
 import StickyFooter from "./Components/StickyFooter";
+import RoamsteadChat from "./Components/RoamsteadChat";
 
 function AppWithFooter() {
 	let location = useLocation();
@@ -29,6 +30,10 @@ function AppWithFooter() {
 				<Route
 					path="/command-center"
 					component={CommandCenter}
+				/>
+				<Route
+					path="/roamstead-chat"
+					component={RoamsteadChat}
 				/>
 			</Switch>
 
