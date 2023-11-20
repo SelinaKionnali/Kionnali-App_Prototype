@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import "./StickyFooter.css";
 import { useHistory } from "react-router-dom"; // if using react-router
 import hamburger from "../Assets/StickyFooterIcons/hamburger.png";
@@ -11,62 +11,57 @@ export default function StickyFooter(props) {
 	let history = useHistory(); // if using react-router
 	const [active, setActive] = useState("Home"); // "Home" is the default active menu item
 
-	const navbarItemRefs = useState([]); // Create an array of refs for each menu item
+	const navbarItems = [
+		{
+			name: "Hamburger",
+			icon: hamburger,
+		},
+		{
+			name: "Toggle",
+			icon: toggle,
+		},
+		{
+			name: "Home",
+			icon: home,
+		},
+		{
+			name: "Msg",
+			icon: msg,
+		},
+		{
+			name: "Profile",
+			icon: profile,
+		},
+	];
 
-	const navbarHeadings = ["Toggle", "Home", "Msg", "Profile"];
-
-	// Function to assign refs
-	const setRefs = (element, index) => {
-		navbarItemRefs.current[index] = element;
-	};
-
-	const handleNavbarClick = (props) => {
-		history.push("/");
+	const handleNavbarClick = (itemName) => {
+		setActive(itemName);
+		if (itemName === "Home") {
+			history.push("/dashboard");
+		} else if (itemName === "Msg") {
+			history.push("/roamstead-chat");
+		} else if (itemName === "Profile") {
+			history.push("/profile");
+		} else if (itemName === "Toggle") {
+			history.push("/command-center");
+		}
 	};
 
 	return (
 		<div className="sticky-footer">
 			<div className="navbar">
-				<div className="navbar-item">
-					<img
-						className="hamburger-icon"
-						src={hamburger}
-						alt="hamburger-icon"
-						onClick={handleNavbarClick}
-					/>
-				</div>
-				<div className="navbar-item">
-					<img
-						className="toggle-icon"
-						src={toggle}
-						alt="toggle icon"
-						onClick={handleNavbarClick}
-					/>
-				</div>
-				<div className="navbar-item">
-					<img
-						className="home-icon"
-						src={home}
-						alt="home-icon"
-						onClick={handleNavbarClick}
-					/>
-				</div>
-				<div className="navbar-item">
-					<img
-						className="msg-icon"
-						src={msg}
-						alt="msg-icon"
-						onClick={handleNavbarClick}
-					/>
-				</div>
-				<div className="navbar-item">
-					<img
-						className="profile-icon"
-						src={profile}
-						alt="profile-icon"
-						onClick={handleNavbarClick}
-					/>
-				</div>
+				{navbarItems.map((item, index) => (
+					<div
+						key={index}
+						className={`navbar-item ${active === item.name ? "active" : ""}`}
+						onClick={() => handleNavbarClick(item.name)}>
+						<img
+							className={`${item.name.toLowerCase()}-icon`}
+							src={item.icon}
+							alt={item.name}
+						/>
+					</div>
+				))}
 			</div>
 		</div>
 	);
