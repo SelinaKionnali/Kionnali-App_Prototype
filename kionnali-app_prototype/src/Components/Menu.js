@@ -9,7 +9,7 @@ export default function Menu() {
 	const [active, setActive] = useState("Shell"); // "Shell" is the default active menu item
 	const [page, showPage] = useState("ShellPage"); // "ShellPage" is the default page
 	const menuItemRefs = useRef([]); // Create an array of refs for each menu item
-	const [sliderStyle, setSliderStyle] = useState({}); // Style for the slider
+	const [sliderStyle, setSliderStyle] = useState({}); // Style for the slider div element in the menu bar (see below) is set dynamically based on the active menu item
 
 	// Function to assign refs
 	const setRefs = (element, index) => {

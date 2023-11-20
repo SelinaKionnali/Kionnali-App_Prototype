@@ -32,6 +32,17 @@
   height: 407px;
 }
 
+.community-feed {
+  position: absolute;
+  background-image: url("../Assets/CommunityFeed/CommunityFeetBG.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* This will cover the entire area of the div, you can adjust as needed */
+  width: 414px;
+  height: 407px;
+}
+
+
  h1 {
   position: absolute;
   top: 50%;

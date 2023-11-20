@@ -2,10 +2,15 @@ import { useState } from "react";
 import "./StickyFooter.css";
 import { useHistory } from "react-router-dom"; // if using react-router
 import hamburger from "../Assets/StickyFooterIcons/hamburger.png";
+import hamburgerActive from "../Assets/StickyFooterIcons/hamburgerActive.png";
 import home from "../Assets/StickyFooterIcons/home.png";
+import homeActive from "../Assets/StickyFooterIcons/homeActive.png";
 import msg from "../Assets/StickyFooterIcons/msg.png";
+import msgActive from "../Assets/StickyFooterIcons/msgActive.png";
 import profile from "../Assets/StickyFooterIcons/profileIcon.png";
+import profileActive from "../Assets/StickyFooterIcons/profileActive.png";
 import toggle from "../Assets/StickyFooterIcons/toggleIcon.png";
+import toggleActive from "../Assets/StickyFooterIcons/toggleActive.png";
 
 export default function StickyFooter(props) {
 	let history = useHistory(); // if using react-router
@@ -15,22 +20,27 @@ export default function StickyFooter(props) {
 		{
 			name: "Hamburger",
 			icon: hamburger,
+			activeIcon: hamburgerActive,
 		},
 		{
 			name: "Toggle",
 			icon: toggle,
+			activeIcon: toggleActive,
 		},
 		{
 			name: "Home",
 			icon: home,
+			activeIcon: homeActive,
 		},
 		{
 			name: "Msg",
 			icon: msg,
+			activeIcon: msgActive,
 		},
 		{
 			name: "Profile",
 			icon: profile,
+			activeIcon: profileActive,
 		},
 	];
 
@@ -41,7 +51,7 @@ export default function StickyFooter(props) {
 		} else if (itemName === "Msg") {
 			history.push("/roamstead-chat");
 		} else if (itemName === "Profile") {
-			history.push("/profile");
+			history.push("/community-feed");
 		} else if (itemName === "Toggle") {
 			history.push("/command-center");
 		}
@@ -57,7 +67,7 @@ export default function StickyFooter(props) {
 						onClick={() => handleNavbarClick(item.name)}>
 						<img
 							className={`${item.name.toLowerCase()}-icon`}
-							src={item.icon}
+							src={active === item.name ? item.activeIcon : item.icon}
 							alt={item.name}
 						/>
 					</div>
