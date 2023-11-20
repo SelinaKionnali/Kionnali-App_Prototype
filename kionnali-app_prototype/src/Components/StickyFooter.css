@@ -11,3 +11,28 @@
 
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 20px;
+  width: 352px;
+height: 50px;
+flex-shrink: 0;
+border-radius: 30px;
+background: linear-gradient(223deg, #636C4E 6.86%, #3F4532 100.09%);
+box-shadow: 6px 6px 10px 0px rgba(46, 50, 40, 0.20);
+}
+
+.navbar-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar-item:hover {
+  background-color: #3F4532;
+  border-radius: 30px;
+}
