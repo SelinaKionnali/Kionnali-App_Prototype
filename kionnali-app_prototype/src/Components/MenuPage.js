@@ -44,21 +44,21 @@ export default function MenuPage() {
 					alt="Settings Icon"
 				/>
 			</header>
-			<nav className="menu-items">
+			<nav className="menu-section-container">
 				{Object.keys(menuItems).map((item, index) => (
 					<div
 						key={index}
 						className="menu-item-container">
 						<h3 className="menu-item-title">{item}</h3>
-						<ul className="menu-item-list">
+						<div className="menu-item-list">
 							{menuItems[item].map((subItem, index) => (
-								<li
+								<p
 									key={index}
 									className="menu-sub-item">
 									{subItem}
-								</li>
+								</p>
 							))}
-						</ul>
+						</div>
 					</div>
 				))}
 			</nav>
