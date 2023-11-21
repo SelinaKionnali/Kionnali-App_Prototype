@@ -11,6 +11,7 @@ import CommandCenter from "./Components/CommandCenter";
 import StickyFooter from "./Components/StickyFooter";
 import RoamsteadChat from "./Components/RoamsteadChat";
 import CommunityFeed from "./Components/CommunityFeed";
+import MenuPage from "./Components/MenuPage";
 
 function AppWithFooter() {
 	let location = useLocation();
@@ -39,6 +40,10 @@ function AppWithFooter() {
 				<Route
 					path="/community-feed"
 					component={CommunityFeed}
+				/>
+				<Route
+					path="/menu"
+					component={MenuPage}
 				/>
 			</Switch>
 

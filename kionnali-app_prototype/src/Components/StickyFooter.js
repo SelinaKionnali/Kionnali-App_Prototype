@@ -54,6 +54,8 @@ export default function StickyFooter(props) {
 			history.push("/community-feed");
 		} else if (itemName === "Toggle") {
 			history.push("/command-center");
+		} else if (itemName === "Hamburger") {
+			history.push("/menu");
 		}
 	};
 

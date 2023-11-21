@@ -1,0 +1,38 @@
+.menu-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: url(../Assets/MenuPage/MenuHeaderBG.png);
+    background-size: cover;
+    background-position: center;
+    width: 394px;
+    height: 186px;
+    flex-shrink: 0;
+}
+
+.menu-title {
+  position: absolute;
+  margin-left: -70%;
+  margin-top: 20%;
+  width: 90px;
+height: 36px;
+flex-shrink: 0;
+color: var(--base-black, #000);
+text-align: center;
+font-family: Quicksand;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.profile-picture {
+  margin: 40% 0% 0% 0%;
+}
+
+.back-arrow:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

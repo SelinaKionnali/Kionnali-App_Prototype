@@ -32,7 +32,8 @@ box-shadow: 6px 6px 10px 0px rgba(46, 50, 40, 0.20);
   padding: 20px;
 }
 
-.navbar-item:hover {
+.navbar-item:hover,
+.navbar-item.active {
   background-color: #3F4532;
   border-radius: 30px;
 }

@@ -34,7 +34,7 @@
 
 .community-feed {
   position: absolute;
-  background-image: url("../Assets/CommunityFeed/CommunityFeetBG.png");
+  background-image: url("../Assets/CommunityFeed/CommunityFeedBG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; /* This will cover the entire area of the div, you can adjust as needed */
@@ -71,7 +71,7 @@
   background: url("../Assets/CommandCenter/roundedTile.png") no-repeat;
   display: flex;
   width: 390px;
-  height: 100%px;
+  height: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
