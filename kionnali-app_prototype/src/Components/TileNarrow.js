@@ -1,10 +1,5 @@
 import "./TileLarge.css";
 
-export default function TileNarrow() {
-	return (
-		<div className="narrow-tile-container">
-			<div className="narrow-tile"></div>
-			<div className="narrow-tile"></div>
-		</div>
-	);
+export default function TileNarrow({ children }) {
+	return <div className="narrow-tile">{children}</div>;
 }

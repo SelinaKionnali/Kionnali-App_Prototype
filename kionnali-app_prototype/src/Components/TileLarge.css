@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-shrink: 0;
-  height: 100%;
+  height: fit-content;
   width: 100%;
   margin: 10px;
 }
@@ -31,22 +31,24 @@ justify-content: center;
 align-items: flex-start;
 gap: 8px;
 width: 360px;
-height: 268px;
+height: fit-content;
 margin: 10px;
 }
 
 .narrow-tile {
   display: flex;
-justify-content: center;
-
+justify-content: flex-start;
+align-items: flex-start;
+flex-direction: column;
   width: 176px;
-height: 268px;
+height: fit-content;
 border-radius: var(--main-system-20-px, 20px);
 background: #FFF;
-
 /* tile drop shadow 1 */
 box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
 }
+
+
 
 .sml-square-tile-container {
   display: flex;

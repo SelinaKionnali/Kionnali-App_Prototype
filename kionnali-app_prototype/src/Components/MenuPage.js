@@ -3,10 +3,13 @@ import "./CommandCenter.css";
 import settingsIcon from "../Assets/MenuPage/settingsIcon.png";
 import profilePicture from "../Assets/MenuPage/ProfilePicture.png";
 import backArrow from "../Assets/MenuPage/backArrow.png";
+import TileNarrow from "./TileNarrow";
+import threeDots from "../Assets/Dashboard/threeDots.png";
 
 export default function MenuPage() {
 	const menuItems = {
-		Cleaning: ["Organiser", "Shopping List", "Cleaning"],
+		"Clean and Tidy": ["Organiser", "Shopping List", "Cleaning"],
+		Connect: ["Marketplace", "Roamstead Chat", "Community Feed", "Forum"],
 		Systems: [
 			"Compare All",
 			"Food",
@@ -16,9 +19,6 @@ export default function MenuPage() {
 			"Compost",
 			"EV",
 		],
-		Connect: ["Marketplace", "Roamstead Chat", "Community Feed", "Forum"],
-		Other: ["Weather", "Preparedness"],
-		Settings: ["Profile", "Command Center", "Logout"],
 	};
 
 	return (
@@ -44,12 +44,18 @@ export default function MenuPage() {
 					alt="Settings Icon"
 				/>
 			</header>
-			<nav className="menu-section-container">
+			<div className="menu-section-container">
 				{Object.keys(menuItems).map((item, index) => (
-					<div
-						key={index}
-						className="menu-item-container">
-						<h3 className="menu-item-title">{item}</h3>
+					<TileNarrow key={index}>
+						<h3 className="menu-item-title">
+							{item}&nbsp;&nbsp;
+							<img
+								src={threeDots}
+								alt=""
+								className="menu-three-dots"
+							/>
+						</h3>
+
 						<div className="menu-item-list">
 							{menuItems[item].map((subItem, index) => (
 								<p
@@ -59,9 +65,9 @@ export default function MenuPage() {
 								</p>
 							))}
 						</div>
-					</div>
+					</TileNarrow>
 				))}
-			</nav>
+			</div>
 		</div>
 	);
 }
