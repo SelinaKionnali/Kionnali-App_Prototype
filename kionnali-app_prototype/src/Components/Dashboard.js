@@ -51,6 +51,13 @@ export default function Dashboard(props) {
 		console.log("Rainfall click");
 	};
 
+	const navigatePowerPage = (e) => {
+		e.stopPropagation();
+		history.push("/power-page");
+
+		console.log("Power page click");
+	};
+
 	const expandedContent =
 		"The weather for the next week is sunny with no upcoming extreme events. You will be net positive on energy and you have plenty of water in store. Your tomatoes are about a week from harvest!";
 
@@ -104,7 +111,9 @@ export default function Dashboard(props) {
 							</div>
 							<div className="system-status-frame">
 								<div className="system-status-box">
-									<button className="power-system-tile"></button>
+									<button
+										className="power-system-tile"
+										onClick={navigatePowerPage}></button>
 								</div>
 								<div className="system-status-box">
 									<button className="thermal-system-tile"></button>

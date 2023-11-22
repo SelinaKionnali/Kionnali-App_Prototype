@@ -1,0 +1,9 @@
+.power-page h1 {
+  font-family: Quicksand;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}

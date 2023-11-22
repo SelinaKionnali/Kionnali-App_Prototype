@@ -12,6 +12,7 @@ import StickyFooter from "./Components/StickyFooter";
 import RoamsteadChat from "./Components/RoamsteadChat";
 import CommunityFeed from "./Components/CommunityFeed";
 import MenuPage from "./Components/MenuPage";
+import PowerPage from "./Components/PowerPage";
 
 function AppWithFooter() {
 	let location = useLocation();
@@ -44,6 +45,10 @@ function AppWithFooter() {
 				<Route
 					path="/menu"
 					component={MenuPage}
+				/>
+				<Route
+					path="/power-page"
+					component={PowerPage}
 				/>
 			</Switch>
 
