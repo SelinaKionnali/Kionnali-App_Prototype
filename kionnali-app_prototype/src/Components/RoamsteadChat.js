@@ -1,8 +1,8 @@
-// Note: Roamstead Chat Component
 import "./CommandCenter.css";
 import "../Components/RoamsteadChat.css";
-import ChatToggle from "./ChatToggle";
-import ChatMenu from "./ChatMenu";
+import HeaderBtns from "./HeaderBtns";
+import searchIcon from "../Assets/RoamsteadChat/searchIcon.png";
+import TileLarge from "./TileLarge";
 
 export default function RoamsteadChat() {
 	return (
@@ -12,8 +12,28 @@ export default function RoamsteadChat() {
 					<h1>Roamstead Chat</h1>
 					<p>Ask me anything</p>
 					<div className="cc-rounded-tile">
-						<ChatToggle />
-						<ChatMenu />
+						<HeaderBtns />
+						<div className="search-box">
+							<input
+								type="text"
+								placeholder="  Type here"
+								className="search-input"
+							/>
+							<div className="button-container">
+								<button className="search-button">
+									<img
+										src={searchIcon}
+										alt="search icon"
+									/>
+								</button>
+							</div>
+						</div>
+						<div className="chat-history">
+							<h3>Today</h3>
+							<TileLarge />
+							<h3>Yesterday</h3>
+							<TileLarge />
+						</div>
 					</div>
 				</div>
 			</div>

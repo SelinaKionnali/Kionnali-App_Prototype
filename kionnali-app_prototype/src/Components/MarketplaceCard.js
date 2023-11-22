@@ -14,17 +14,15 @@ const MarketplaceCard = () => {
 							alt="First aid kit"
 						/>
 					</div>
-					<p className="card-text">
-						<span>£39.45</span>
+					<div className="image-data">
+						<div className="image-cost">£39.45</div>
+						<p className="image-title">First Aid Kit</p>
 						<img
 							src={DBpagination}
 							alt="pagination"
+							className="pagination"
 						/>
-						<br />
-						<p>First Aid Kit</p>
-						<br />
-						<br />
-					</p>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -10,6 +10,7 @@ export default function MenuPage() {
 	const menuItems = {
 		"Clean and Tidy": ["Organiser", "Shopping List", "Cleaning"],
 		Connect: ["Marketplace", "Roamstead Chat", "Community Feed", "Forum"],
+
 		Systems: [
 			"Compare All",
 			"Food",
@@ -19,6 +20,8 @@ export default function MenuPage() {
 			"Compost",
 			"EV",
 		],
+		Weather: [],
+		Preparedness: [],
 	};
 
 	return (
@@ -46,7 +49,9 @@ export default function MenuPage() {
 			</header>
 			<div className="menu-section-container">
 				{Object.keys(menuItems).map((item, index) => (
-					<TileNarrow key={index}>
+					<TileNarrow
+						key={index}
+						className="narrow-tile-menu-page">
 						<h3 className="menu-item-title">
 							{item}&nbsp;&nbsp;
 							<img
