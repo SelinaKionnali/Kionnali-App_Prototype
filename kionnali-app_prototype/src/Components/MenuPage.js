@@ -5,25 +5,11 @@ import profilePicture from "../Assets/MenuPage/ProfilePicture.png";
 import backArrow from "../Assets/MenuPage/backArrow.png";
 import TileNarrow from "./TileNarrow";
 import threeDots from "../Assets/Dashboard/threeDots.png";
+import arrow from "../Assets/MenuPage/arrow.png";
+import menuPageData from "./MenuPageData";
+import { Link } from "react-router-dom";
 
 export default function MenuPage() {
-	const menuItems = {
-		"Clean and Tidy": ["Organiser", "Shopping List", "Cleaning"],
-		Connect: ["Marketplace", "Roamstead Chat", "Community Feed", "Forum"],
-
-		Systems: [
-			"Compare All",
-			"Food",
-			"Water",
-			"Power",
-			"Thermal",
-			"Compost",
-			"EV",
-		],
-		Weather: [],
-		Preparedness: [],
-	};
-
 	return (
 		<div className="command-center-container">
 			<header className="menu-header">
@@ -48,26 +34,26 @@ export default function MenuPage() {
 				/>
 			</header>
 			<div className="menu-section-container">
-				{Object.keys(menuItems).map((item, index) => (
+				{menuPageData.map((category, index) => (
 					<TileNarrow
 						key={index}
 						className="narrow-tile-menu-page">
 						<h3 className="menu-item-title">
-							{item}&nbsp;&nbsp;
+							{category.category}
 							<img
 								src={threeDots}
 								alt=""
 								className="menu-three-dots"
 							/>
 						</h3>
-
 						<div className="menu-item-list">
-							{menuItems[item].map((subItem, index) => (
-								<p
-									key={index}
-									className="menu-sub-item">
-									{subItem}
-								</p>
+							{category.subpages.map((subpage, subIndex) => (
+								<Link
+									style={{ textDecoration: "none" }}
+									to={subpage.link}
+									key={subIndex}>
+									<p className="menu-sub-item">{subpage.page}</p>
+								</Link>
 							))}
 						</div>
 					</TileNarrow>
