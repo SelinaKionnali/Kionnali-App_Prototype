@@ -43,7 +43,7 @@ export default function MenuPage() {
 							<img
 								src={threeDots}
 								alt=""
-								className="menu-three-dots"
+								className="menu-title-three-dots"
 							/>
 						</h3>
 						<div className="menu-item-list">
@@ -52,7 +52,16 @@ export default function MenuPage() {
 									style={{ textDecoration: "none" }}
 									to={subpage.link}
 									key={subIndex}>
-									<p className="menu-sub-item">{subpage.page}</p>
+									<p className="menu-sub-item">
+										{subpage.page}
+										<div className="three-dot-container">
+											<img
+												src={threeDots}
+												alt=""
+												className="menu-item-three-dots"
+											/>
+										</div>
+									</p>
 								</Link>
 							))}
 						</div>

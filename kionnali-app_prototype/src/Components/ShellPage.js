@@ -8,7 +8,11 @@ export default function ShellPage() {
 	return (
 		<div className="tile-large-container">
 			<TileXL />
-			<TileSmlSquare />
+			<TileSmlSquare
+				status1="Shell Page"
+				status2={"Shell Page"}
+			/>
+
 			<TileLarge />
 			<TileLarge />
 			<TileNarrow />

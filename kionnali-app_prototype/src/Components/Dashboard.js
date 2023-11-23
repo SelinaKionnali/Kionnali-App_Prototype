@@ -54,8 +54,21 @@ export default function Dashboard(props) {
 	const navigatePowerPage = (e) => {
 		e.stopPropagation();
 		history.push("/power-system");
+	};
 
-		console.log("Power page click");
+	const navigateThermalPage = (e) => {
+		e.stopPropagation();
+		history.push("/thermal-system");
+	};
+
+	const navigateWaterPage = (e) => {
+		e.stopPropagation();
+		history.push("/water-system");
+	};
+
+	const navigateCompostPage = (e) => {
+		e.stopPropagation();
+		history.push("/compost-system");
 	};
 
 	const expandedContent =
@@ -116,13 +129,19 @@ export default function Dashboard(props) {
 										onClick={navigatePowerPage}></button>
 								</div>
 								<div className="system-status-box">
-									<button className="thermal-system-tile"></button>
+									<button
+										className="thermal-system-tile"
+										onClick={navigateThermalPage}></button>
 								</div>
 								<div className="system-status-box">
-									<button className="water-system-tile"></button>
+									<button
+										className="water-system-tile"
+										onClick={navigateWaterPage}></button>
 								</div>
 								<div className="system-status-box">
-									<button className="compost-system-tile"></button>
+									<button
+										className="compost-system-tile"
+										onClick={navigateCompostPage}></button>
 								</div>
 							</div>
 							<SystemPlanning handleClick={handleRainfallClick} />

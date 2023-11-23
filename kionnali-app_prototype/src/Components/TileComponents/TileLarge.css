@@ -6,13 +6,13 @@
   flex-shrink: 0;
   height: fit-content;
   width: 100%;
-  margin: 10px;
+  margin: 8px;
 }
 
 .large-tile {
 display: flex;
 justify-content: center;
-  margin: 10px;
+  margin: 8px;
 width: 330px;
 padding: 8px 23px 142px 16px;
 align-items: center;
@@ -31,7 +31,6 @@ align-items: flex-start;
 gap: 8px;
 width: 360px;
 height: fit-content;
-margin: 10px;
 }
 
 .narrow-tile {
@@ -39,14 +38,13 @@ margin: 10px;
 justify-content: flex-start;
 align-items: flex-start;
 flex-direction: column;
-  width: calc(50% - 4);
+  width: calc(50% - 4px);
 height: fit-content;
 border-radius: var(--main-system-20-px, 20px);
 background: #FFF;
-margin-bottom: 10px;
-margin-top: 10px;
-/* tile drop shadow 1 */
+margin-bottom: 8px;
 box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
+overflow: hidden;
 }
 
 
@@ -57,7 +55,7 @@ justify-content: center;
 gap: 8px;
 width: 360px;
 height: 176px;
-margin: 10px;
+margin: 8px;
 }
 
 .sml-square-tile {
@@ -80,7 +78,7 @@ box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 
   display: flex;
 width: 176px;
 height: 84px;
-justify-content: flex-end;
+justify-content: center;
 align-items: center;
 flex-shrink: 0;
 border-radius: var(--main-system-20-px, 20px);
@@ -106,7 +104,7 @@ margin: 8px;
   display: flex;
   justify-content: center;
   ;
-    margin: 10px;
+    margin: 8px;
   width: 335px;
   height: 200px;
   padding: 8px 23px 142px 16px;
@@ -121,7 +119,7 @@ margin: 8px;
 
 p {
   display: flex;
-  margin: 10px;
+  margin: 8px;
   font-family: Quicksand;
   font-style: normal;
   font-weight: 700;
