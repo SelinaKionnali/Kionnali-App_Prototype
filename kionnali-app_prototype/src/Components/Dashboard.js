@@ -53,7 +53,7 @@ export default function Dashboard(props) {
 
 	const navigatePowerPage = (e) => {
 		e.stopPropagation();
-		history.push("/power-page");
+		history.push("/power-system");
 
 		console.log("Power page click");
 	};

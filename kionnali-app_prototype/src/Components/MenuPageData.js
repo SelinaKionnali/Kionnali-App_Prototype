@@ -42,7 +42,7 @@ const menuPageData = [
 		subpages: [
 			{
 				page: "Compare All",
-				link: "/compare-all",
+				link: "/compare-systems",
 			},
 			{
 				page: "Food",
@@ -54,7 +54,7 @@ const menuPageData = [
 			},
 			{
 				page: "Power",
-				link: "/power-page",
+				link: "/power-system",
 			},
 			{
 				page: "Thermal",
@@ -66,7 +66,7 @@ const menuPageData = [
 			},
 			{
 				page: "EV",
-				link: "/ev-page",
+				link: "/ev-system",
 			},
 		],
 	},

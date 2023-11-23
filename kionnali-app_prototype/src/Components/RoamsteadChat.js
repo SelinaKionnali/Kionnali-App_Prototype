@@ -2,7 +2,7 @@ import "./CommandCenter.css";
 import "../Components/RoamsteadChat.css";
 import HeaderBtns from "./HeaderBtns";
 import searchIcon from "../Assets/RoamsteadChat/searchIcon.png";
-import TileLarge from "./TileLarge";
+import TileLarge from "./TileComponents/TileLarge";
 
 export default function RoamsteadChat() {
 	return (

@@ -1,8 +1,8 @@
-import "./TileLarge.css";
-import TileLarge from "./TileLarge";
-import TileNarrow from "./TileNarrow";
-import TileSmlSquare from "./TileSmlSquare";
-import TileXL from "./TileXL";
+import "./TileComponents/TileLarge.css";
+import TileLarge from "./TileComponents/TileLarge";
+import TileNarrow from "./TileComponents/TileNarrow";
+import TileSmlSquare from "./TileComponents/TileSmlSquare";
+import TileXL from "./TileComponents/TileXL";
 
 export default function ShellPage() {
 	return (

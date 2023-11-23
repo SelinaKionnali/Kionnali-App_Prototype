@@ -3,7 +3,7 @@ import "./CommandCenter.css";
 import settingsIcon from "../Assets/MenuPage/settingsIcon.png";
 import profilePicture from "../Assets/MenuPage/ProfilePicture.png";
 import backArrow from "../Assets/MenuPage/backArrow.png";
-import TileNarrow from "./TileNarrow";
+import TileNarrow from "./TileComponents/TileNarrow";
 import threeDots from "../Assets/Dashboard/threeDots.png";
 import arrow from "../Assets/MenuPage/arrow.png";
 import menuPageData from "./MenuPageData";

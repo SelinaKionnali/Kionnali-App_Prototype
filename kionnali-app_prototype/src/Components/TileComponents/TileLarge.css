@@ -63,14 +63,43 @@ margin: 10px;
 .sml-square-tile {
   display: flex;
 justify-content: center;
+align-items: center;
 
   width: 176px;
 height: 176px;
 border-radius: var(--main-system-20-px, 20px);
 background: #FFF;
+color:darkolivegreen;
+font-family: Quicksand;
 
 /* tile drop shadow 1 */
 box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
+}
+
+.sml-rectangle {
+  display: flex;
+width: 176px;
+height: 84px;
+justify-content: flex-end;
+align-items: center;
+flex-shrink: 0;
+border-radius: var(--main-system-20-px, 20px);
+background: #FFF;
+color:darkolivegreen;
+font-family: Quicksand;
+
+
+/* tile drop shadow 1 */
+box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
+}
+
+.sml-rectangular-container {
+  display: flex;
+justify-content: center;
+gap: 8px;
+width: 360px;
+height: 84px;
+margin: 8px;
 }
 
 .extra-large-tile {
@@ -90,13 +119,13 @@ box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 
   box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
   }
 
-p{
+p {
   display: flex;
   margin: 10px;
   font-family: Quicksand;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
   text-align: center;
   letter-spacing: -0.48px;
