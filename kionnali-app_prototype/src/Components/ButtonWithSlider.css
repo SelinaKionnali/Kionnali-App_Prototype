@@ -1,0 +1,129 @@
+.buttons-with-slider {
+  height: 203px;
+  width: 77px;
+}
+
+.buttons-with-slider .overlap {
+  height: 182px;
+  position: relative;
+  top: 14px;
+}
+
+.buttons-with-slider .slider {
+  background: linear-gradient(180deg, rgb(203.15, 231.63, 144.77) 0%, rgb(84.18, 113.69, 23.68) 100%);
+  border-radius: 10px;
+  box-shadow: var(--subtle-inner-shaddow);
+  height: 182px;
+  left: 7px;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  width: 62px;
+}
+
+.buttons-with-slider .rectangle {
+  background: linear-gradient(
+      180deg,
+      rgb(255, 210.12, 51) 0%,
+      rgb(255, 225.78, 122.19) 99.99%,
+      rgba(255, 198.9, 0, 0) 100%
+  );
+  border-radius: 5px;
+  height: 192px;
+  left: 0;
+  position: absolute;
+  top: 110px;
+  width: 62px;
+}
+
+.buttons-with-slider .level {
+  color: #ffffff;
+  font-family: "Quicksand-Light", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  height: 14px;
+  left: -20px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 44px;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  width: 101px;
+}
+
+.buttons-with-slider .button-frame {
+  height: 64px;
+  left: 0;
+  position: absolute;
+  top: 118px;
+  width: 77px;
+}
+
+.buttons-with-slider .overlap-group {
+  position: relative;
+  width: 75px;
+}
+
+.buttons-with-slider .CEILING {
+  color: #ffffff;
+  font-family: "Quicksand-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  height: 20px;
+  left: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 17px;
+}
+
+.buttons-with-slider .div {
+  background-color: #ffffffcc;
+  border-radius: 9px;
+  height: 168px;
+  left: 6px;
+  position: absolute;
+  top: 0;
+  width: 63px;
+}
+
+.buttons-with-slider .button-rectangle {
+  background: linear-gradient(180deg, rgb(255, 231, 146) 0%, rgb(255, 184, 76) 100%);
+  border-radius: 15px;
+  box-shadow: var(--button-unpressed);
+  height: 55px;
+  left: 0;
+  position: absolute;
+  top: 127px;
+  width: 75px;
+}
+
+.buttons-with-slider .text-wrapper {
+  color: #ffffff;
+  font-family: "Quicksand-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  height: 20px;
+  left: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 144px;
+}
+
+.buttons-with-slider .unpressed {
+  height: 182px;
+  top: -118px;
+}
+
+.buttons-with-slider .pressed {
+  background: linear-gradient(180deg, rgb(115.76, 137.06, 71.39) 0%, rgb(176.9, 205.06, 117.06) 100%);
+  border-radius: 15px;
+  box-shadow: inset 4px 4px 6px #0000001a, inset -4px -4px 6px #ffffff66, inset -4px -4px 4px #ffffff0d;
+  height: 55px;
+  top: 9px;
+}

@@ -18,3 +18,36 @@ align-items: center;
 gap: 8px;
 }
 
+.graph-tile {
+  display: flex;
+}
+
+.graph-tile h3 {
+  display: flex;
+  color: var(--Dark-Green, #435A10);
+  font-family: Quicksand;
+}
+
+.narrow-tile h3{
+  display: flex;
+  color: #435A10;
+  font-family: Quicksand;
+}
+
+.narrow-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: calc(50% - 4px);
+  height: fit-content;
+}
+.slider-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  width: 154px;
+  height: fit-content;
+  padding: 0px 0px 0px 0px;
+}
