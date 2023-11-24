@@ -5,11 +5,24 @@ import profilePicture from "../Assets/MenuPage/ProfilePicture.png";
 import backArrow from "../Assets/MenuPage/backArrow.png";
 import TileNarrow from "./TileComponents/TileNarrow";
 import threeDots from "../Assets/Dashboard/threeDots.png";
-import arrow from "../Assets/MenuPage/arrow.png";
 import menuPageData from "./MenuPageData";
 import { Link } from "react-router-dom";
 
 export default function MenuPage() {
+	const onDragStart = (event, item) => {
+		event.dataTransfer.setData("text/plain", item);
+	};
+
+	const onDragOver = (event) => {
+		event.preventDefault(); // Necessary to allow dropping
+	};
+
+	const onDrop = (event, category) => {
+		event.preventDefault();
+		const droppedItem = event.dataTransfer.getData("text/plain");
+		// Logic to handle item drop, e.g., reordering or moving items between categories
+	};
+
 	return (
 		<div className="command-center-container">
 			<header className="menu-header">
@@ -37,6 +50,8 @@ export default function MenuPage() {
 				{menuPageData.map((category, index) => (
 					<TileNarrow
 						key={index}
+						onDrop={(event) => onDrop(event, category.category)}
+						onDragOver={(event) => onDragOver(event)}
 						className="narrow-tile-menu-page">
 						<h3 className="menu-item-title">
 							{category.category}
@@ -46,7 +61,11 @@ export default function MenuPage() {
 								className="menu-title-three-dots"
 							/>
 						</h3>
-						<div className="menu-item-list">
+						<div
+							className="menu-item-list"
+							key={index}
+							onDragStart={(event) => onDragStart(event, category.category)}
+							draggable>
 							{category.subpages.map((subpage, subIndex) => (
 								<Link
 									style={{ textDecoration: "none" }}
