@@ -1,5 +1,6 @@
 import "../CommandCenter.css";
 import "./PowerSystem.css";
+import "../Dashboard.css";
 import PowerSystemMainImg from "../../Assets/PowerSystem/PowerSystemMainImg.png";
 import SystemStatusBox from "./SystemStatusBox";
 import TileSmlSquare from "../TileComponents/TileSmlSquare";
@@ -7,14 +8,9 @@ import TileSmlRect from "../TileComponents/TileSmlRect";
 
 export default function PowerSystem() {
 	const powerStatus = "You are generating more than you are using today.";
-	const expandedContent = (
-		<>
-			<p>
-				You are generating more than you are using today. This means that you
-				are storing energy in your battery for later use.
-			</p>
-		</>
-	);
+	const expandedContent =
+		"You are generating more than you are using today. This means that you are storing energy in your battery for later use.";
+
 	const battery = "Battery Charge";
 	const devices = (
 		<>

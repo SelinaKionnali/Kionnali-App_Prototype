@@ -9,20 +9,6 @@ import menuPageData from "./MenuPageData";
 import { Link } from "react-router-dom";
 
 export default function MenuPage() {
-	const onDragStart = (event, item) => {
-		event.dataTransfer.setData("text/plain", item);
-	};
-
-	const onDragOver = (event) => {
-		event.preventDefault(); // Necessary to allow dropping
-	};
-
-	const onDrop = (event, category) => {
-		event.preventDefault();
-		const droppedItem = event.dataTransfer.getData("text/plain");
-		// Logic to handle item drop, e.g., reordering or moving items between categories
-	};
-
 	return (
 		<div className="command-center-container">
 			<header className="menu-header">
@@ -48,11 +34,7 @@ export default function MenuPage() {
 			</header>
 			<div className="menu-section-container">
 				{menuPageData.map((category, index) => (
-					<TileNarrow
-						key={index}
-						onDrop={(event) => onDrop(event, category.category)}
-						onDragOver={(event) => onDragOver(event)}
-						className="narrow-tile-menu-page">
+					<TileNarrow className="narrow-tile-menu-page">
 						<h3 className="menu-item-title">
 							{category.category}
 							<img
@@ -61,11 +43,7 @@ export default function MenuPage() {
 								className="menu-title-three-dots"
 							/>
 						</h3>
-						<div
-							className="menu-item-list"
-							key={index}
-							onDragStart={(event) => onDragStart(event, category.category)}
-							draggable>
+						<div className="menu-item-list">
 							{category.subpages.map((subpage, subIndex) => (
 								<Link
 									style={{ textDecoration: "none" }}

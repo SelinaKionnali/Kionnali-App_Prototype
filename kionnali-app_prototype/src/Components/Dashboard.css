@@ -170,7 +170,7 @@ overflow: hidden;
   border-radius: var(--main-system-20-px, 20px);
   background: #EAEAEA;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.05) inset;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
 }
 
 .sunflower-icon {

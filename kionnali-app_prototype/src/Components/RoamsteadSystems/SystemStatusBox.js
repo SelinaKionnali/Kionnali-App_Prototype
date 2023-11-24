@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../Dashboard.css";
 
 export default function SystemStatusBox({
 	status,
