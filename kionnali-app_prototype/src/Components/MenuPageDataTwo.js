@@ -53,4 +53,7 @@ const initialData = {
 			subpageIds: ["subpage-16"],
 		},
 	},
+	columnOrder: ["column-1", "column-2", "column-3", "column-4", "column-5"],
 };
+
+export default initialData;

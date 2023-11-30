@@ -19,6 +19,7 @@ import WaterSystem from "./Components/RoamsteadSystems/WaterSystem";
 import ThermalSystem from "./Components/RoamsteadSystems/ThermalSystem";
 import CompostSystem from "./Components/RoamsteadSystems/CompostSystem";
 import EVSystem from "./Components/RoamsteadSystems/EVSystem";
+import TestMenuPageTwo from "./Components/TestMenuPageTwo";
 
 function AppWithFooter() {
 	let location = useLocation();
@@ -79,6 +80,10 @@ function AppWithFooter() {
 				<Route
 					path="/ev-system"
 					component={EVSystem}
+				/>
+				<Route
+					path="/test-menu-page"
+					component={TestMenuPageTwo}
 				/>
 			</Switch>
 

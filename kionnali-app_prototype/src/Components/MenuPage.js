@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./MenuPage.css";
 import "./CommandCenter.css";
 import settingsIcon from "../Assets/MenuPage/settingsIcon.png";
@@ -7,8 +8,11 @@ import TileNarrow from "./TileComponents/TileNarrow";
 import threeDots from "../Assets/Dashboard/threeDots.png";
 import menuPageData from "./MenuPageData";
 import { Link } from "react-router-dom";
+import initialData from "./MenuPageDataTwo";
 
 export default function MenuPage() {
+	const [menuPageData, setMenuPageData] = useState(initialData);
+
 	return (
 		<div className="command-center-container">
 			<header className="menu-header">
@@ -33,37 +37,45 @@ export default function MenuPage() {
 				/>
 			</header>
 			<div className="menu-section-container">
-				{menuPageData.map((category, index) => (
-					<TileNarrow className="narrow-tile-menu-page">
-						<h3 className="menu-item-title">
-							{category.category}
-							<img
-								src={threeDots}
-								alt=""
-								className="menu-title-three-dots"
-							/>
-						</h3>
-						<div className="menu-item-list">
-							{category.subpages.map((subpage, subIndex) => (
-								<Link
-									style={{ textDecoration: "none" }}
-									to={subpage.link}
-									key={subIndex}>
-									<p className="menu-sub-item">
-										{subpage.page}
-										<div className="three-dot-container">
-											<img
-												src={threeDots}
-												alt=""
-												className="menu-item-three-dots"
-											/>
-										</div>
-									</p>
-								</Link>
-							))}
-						</div>
-					</TileNarrow>
-				))}
+				{menuPageData.columnOrder.map((columnId) => {
+					const column = menuPageData.columns[columnId];
+					return (
+						<TileNarrow
+							key={column.id}
+							className="narrow-tile-menu-page">
+							<h3 className="menu-item-title">
+								{column.title}
+								<img
+									src={threeDots}
+									alt=""
+									className="menu-title-three-dots"
+								/>
+							</h3>
+							<div className="menu-item-list">
+								{column.subpageIds.map((subpageId) => {
+									const subpage = menuPageData.subpages[subpageId];
+									return (
+										<Link
+											to={subpage.link}
+											key={subpage.id}
+											style={{ textDecoration: "none" }}>
+											<p className="menu-sub-item">
+												{subpage.page}
+												<div className="three-dot-container">
+													<img
+														src={threeDots}
+														alt=""
+														className="menu-item-three-dots"
+													/>
+												</div>
+											</p>
+										</Link>
+									);
+								})}
+							</div>
+						</TileNarrow>
+					);
+				})}
 			</div>
 		</div>
 	);
