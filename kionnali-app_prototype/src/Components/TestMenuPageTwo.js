@@ -15,7 +15,7 @@ export default function TestMenuPageTwo() {
 					);
 					console.log(subpages);
 
-					return column.title;
+					return 
 				})}
 			</div>
 		</>

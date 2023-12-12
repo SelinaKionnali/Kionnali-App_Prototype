@@ -4,7 +4,7 @@ import Toggle from "./Toggle";
 
 export default function ModeTiles() {
 	return (
-		<div className="slider">
+		<div className="modes slider">
 			<div className="mode-tile">
 				<div className="mode-toggle-wrapper">
 					<p>Night</p>

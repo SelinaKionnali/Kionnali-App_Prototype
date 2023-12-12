@@ -1,8 +1,8 @@
 
 
 .modes {
-  width: 389px;
-  height: 180px;
+  width: 100%;
+  min-height: 180px;
   margin: 0px;
   scroll-behavior: smooth;
   overflow-y: scroll;
@@ -15,7 +15,7 @@
   margin-left: 0px;
   width: 84px;
   height: 24px;
-  color: var(--1---Primary-Color, #658229);
+  color: #658229;
   text-align: center;
   
   /* subtitles */
@@ -32,6 +32,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-self: center;
+  width: 100%;
+
 }
 
 .mode-tile {
@@ -62,9 +64,3 @@ box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.10), -4px -4px 10px 0px rgba(0, 0
   color: #000000;
 }
 
-.slick-slide > div {
-  margin: 0 10px;
-}
-.slick-list {
-  margin: 0 -10px;
-}
