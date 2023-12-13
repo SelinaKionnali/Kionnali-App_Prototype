@@ -10,11 +10,12 @@ import AddModeModal from "./CommandCenter/AddModeModal";
 export default function ModeTiles() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
-	const openModal = () => {
+	const handleModalOpen = () => {
 		setIsModalOpen(true);
+		console.log("Add Mode button clicked");
 	};
 
-	const closeModal = () => {
+	const handleModalClose = () => {
 		setIsModalOpen(false);
 	};
 
@@ -24,12 +25,12 @@ export default function ModeTiles() {
 				<div className="add-mode-wrapper">
 					<button
 						className="add-mode"
-						onClick={openModal}></button>
-					<p>Add Mode</p>
+						onClick={handleModalOpen}></button>
 					<AddModeModal
 						isOpen={isModalOpen}
-						closeModal={closeModal}
+						onClose={handleModalClose}
 					/>
+					<p>Add Mode</p>
 				</div>
 			</div>
 
