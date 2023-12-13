@@ -1,8 +1,8 @@
-import "../Components/CommandCenter.css";
-import yellowCircle from "../Assets/CommandCenter/yellowCircle.png";
+import yellowCircle from "../../Assets/CommandCenter/yellowCircle.png";
 import { useHistory } from "react-router-dom"; // if using react-router
-import ModeTiles from "./ModeTiles";
-import Menu from "./Menu";
+import ModeTiles from "../ModeTiles";
+import Menu from "../Menu";
+import "./CommandCenter.css";
 
 export default function CommandCenter() {
 	let history = useHistory(); // if using react-router

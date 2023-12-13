@@ -1,6 +1,6 @@
 // Desc: Dashboard component
 import "./Dashboard.css";
-import "../Components/CommandCenter.css";
+import "../Components/CommandCenter/CommandCenter.css";
 import { useState } from "react";
 import { useHistory } from "react-router-dom"; // if using react-router
 import ForumPostsCard from "./ForumPostsCard";

@@ -1,4 +1,4 @@
-import "./CommandCenter.css";
+import "./CommandCenter/CommandCenter.css";
 import "./CommunityFeed.css";
 
 export default function CommunityFeed() {

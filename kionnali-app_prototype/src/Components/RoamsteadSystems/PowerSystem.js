@@ -1,4 +1,4 @@
-import "../CommandCenter.css";
+import "../CommandCenter/CommandCenter.css";
 import "./PowerSystem.css";
 import "../Dashboard.css";
 import "../TileComponents/TileLarge.css";

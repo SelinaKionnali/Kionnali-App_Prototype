@@ -1,4 +1,4 @@
-import "../CommandCenter.css";
+import "../CommandCenter/CommandCenter.css";
 import "./PowerSystem.css";
 import EVSystemMainImg from "../../Assets/PowerSystem/EVSystemMainImg.png";
 

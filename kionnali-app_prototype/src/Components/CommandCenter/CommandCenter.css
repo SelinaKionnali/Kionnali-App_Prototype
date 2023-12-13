@@ -14,7 +14,7 @@
 
 .command-center {
   position: absolute;
-  background-image: url("../Assets/CommandCenter/CCbg.png");
+  background-image: url("../../Assets/CommandCenter/CCbg.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; /* This will cover the entire area of the div, you can adjust as needed */
@@ -24,7 +24,7 @@
 
 .roamstead-chat {
   position: absolute;
-  background-image: url("../Assets/RoamsteadChat/sunflowersBG.png");
+  background-image: url("../../Assets/RoamsteadChat/sunflowersBG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; /* This will cover the entire area of the div, you can adjust as needed */
@@ -34,7 +34,7 @@
 
 .community-feed {
   position: absolute;
-  background-image: url("../Assets/CommunityFeed/CommunityFeedBG.png");
+  background-image: url("../../Assets/CommunityFeed/CommunityFeedBG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; /* This will cover the entire area of the div, you can adjust as needed */
@@ -68,7 +68,7 @@
 
 .cc-rounded-tile {
   margin: 80% 0% 0% 0%;
-  background: url("../Assets/CommandCenter/roundedTile.png") no-repeat;
+  background: url("../../Assets/CommandCenter/roundedTile.png") no-repeat;
   display: flex;
   width: 390px;
   height: 100%;

@@ -1,4 +1,4 @@
-import "../CommandCenter.css";
+import "../CommandCenter/CommandCenter.css";
 import "./PowerSystem.css";
 import WaterSystemMainImg from "../../Assets/PowerSystem/WaterSystemMainImg.png";
 

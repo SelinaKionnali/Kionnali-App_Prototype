@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { DragDropContext, Draggable } from "react-beautiful-dnd";
 import "./MenuPage.css";
-import "./CommandCenter.css";
+import "../Components/CommandCenter/CommandCenter.css";
 import settingsIcon from "../Assets/MenuPage/settingsIcon.png";
 import profilePicture from "../Assets/MenuPage/ProfilePicture.png";
 import backArrow from "../Assets/MenuPage/backArrow.png";

@@ -7,7 +7,7 @@ import {
 import Home from "./Components/Home";
 import "./App.css";
 import Dashboard from "./Components/Dashboard";
-import CommandCenter from "./Components/CommandCenter";
+import CommandCenter from "./Components/CommandCenter/CommandCenter";
 import StickyFooter from "./Components/StickyFooter";
 import RoamsteadChat from "./Components/RoamsteadChat";
 import CommunityFeed from "./Components/CommunityFeed";

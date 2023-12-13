@@ -1,4 +1,4 @@
-import "../CommandCenter.css";
+import "../CommandCenter/CommandCenter.css";
 import "./PowerSystem.css";
 import CompostSystemMainImg from "../../Assets/PowerSystem/CompostSystemMainImg.png";
 
