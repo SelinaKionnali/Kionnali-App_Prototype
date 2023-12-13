@@ -38,7 +38,7 @@
 
 .mode-tile {
   display: flex;
-width: 149px;
+min-width: 149px;
 height: 140px;
 padding: 12px 16px;
 flex-direction: column;
@@ -64,3 +64,11 @@ box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.10), -4px -4px 10px 0px rgba(0, 0
   color: #000000;
 }
 
+.add-mode {
+  background: url(../Assets/CommandCenter/addIcon.png) no-repeat center center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0px 0px 0px;
+}

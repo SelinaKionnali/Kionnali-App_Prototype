@@ -17,8 +17,30 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;  
+}
+
+.add-mode-wrapper {
+  display: flex;
+  width: 50px;
+  height: 100px;
+    flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
 
 }
+
+.add-mode-wrapper p {
+  color: #658229;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;  
+}
+
 
 .toggle {
   width: 42px;
