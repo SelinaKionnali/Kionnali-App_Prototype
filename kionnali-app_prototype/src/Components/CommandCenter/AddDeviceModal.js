@@ -1,6 +1,6 @@
 import styles from "./AddModeModal.module.css";
 
-export default function AddDeviceModal(onBack, onClose, isOpen) {
+export default function AddDeviceModal({ onBack, onClose, isOpen }) {
 	if (!isOpen) return null;
 
 	return (
