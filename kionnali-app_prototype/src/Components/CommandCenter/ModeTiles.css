@@ -65,7 +65,7 @@ box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.10), -4px -4px 10px 0px rgba(0, 0
 }
 
 .add-mode {
-  background: url(../Assets/CommandCenter/addIcon.png) no-repeat center center;
+  background: url(../../Assets/CommandCenter/addIcon.png) no-repeat center center;
   width: 30px;
   height: 30px;
   border: none;

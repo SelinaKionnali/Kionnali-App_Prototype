@@ -1,30 +1,48 @@
-import "./AddModeModal.css";
+import styles from "./AddModeModal.module.css";
 
-export default function AddModeModal({ isOpen, onClose }) {
+export default function AddModeModal({ isOpen, onClose, onAddCustomMode }) {
 	if (!isOpen) return null;
+
+	const handleCustomClick = () => {
+		onAddCustomMode();
+	};
 
 	return (
 		<>
-			<div className="modal-wrapper">
+			<div className={styles.modalWrapper}>
 				<div
-					className="modal-overlay"
+					className={styles.modalOverlay}
 					onClick={onClose}
 				/>
-				<div className="modal-content">
-					<h3>Add a Mode</h3>
-					<div className="suggested-modes">
-						<h3>Suggested modes</h3>
-						<div className="suggested-mode">
-							<div className="suggested-mode-img"></div>
+
+				<div className={styles.modalContent}>
+					<div className={styles.modalHeader}>
+						<div
+							className={styles.closeBtn}
+							onClick={onClose}></div>
+					</div>
+
+					<h3 className={styles.title}>Add a Mode</h3>
+					<div className={styles.suggestedModes}>
+						<h3 className={styles.subtitle}>Suggested modes</h3>
+						<div className={styles.suggestedMode}>
+							<div className={styles.suggestedModeImg}></div>
 							<p>Morning Mode</p>
 						</div>
-						<div className="suggested-mode">
-							<div className="suggested-mode-img"></div>
+						<div className={styles.suggestedMode}>
+							<div className={styles.suggestedModeImg}></div>
 							<p>Night Mode</p>
 						</div>
 					</div>
-					<button onClick={onClose}>Close</button>
-					<button>Continue</button>
+
+					<div className={styles.divider}></div>
+					<button
+						className={styles.addModeBtn}
+						onClick={handleCustomClick}>
+						Add Custom Mode
+					</button>
+
+					<div className={styles.progressStepper}></div>
 				</div>
 			</div>
 		</>
