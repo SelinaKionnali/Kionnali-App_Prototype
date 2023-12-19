@@ -1,6 +1,6 @@
 import styles from "./AddModeModal.module.css";
 
-export default function AddDeviceModal({ onBack, onClose, isOpen }) {
+export default function AddDeviceModal({ onBackToNameMode, onClose, isOpen }) {
 	if (!isOpen) return null;
 
 	return (
@@ -18,17 +18,14 @@ export default function AddDeviceModal({ onBack, onClose, isOpen }) {
 							onClick={onClose}></div>
 					</div>
 
-					<h3 className={styles.title}>Add Device Mode</h3>
+					<h3 className={styles.title}>
+						Add devices to
+						<br /> "Goodnight 😴"
+					</h3>
 					<br />
+					<p onClick={onBackToNameMode}>Back</p>
 					<br />
-					<h3 className={styles.subtitle}>Add Device</h3>
-					<br />
-					<div className={styles.pickAnIcon}></div>
-					<br />
-					<br />
-					<p onClick={onBack}>Back</p>
-					<br />
-					<div className={styles.progressStepperTwo}></div>
+					<div className={styles.progressStepperThree}></div>
 				</div>
 			</div>
 		</>

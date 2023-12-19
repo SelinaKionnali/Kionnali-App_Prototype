@@ -38,6 +38,11 @@ export default function ModeTiles({ onAddCustomMode, onAddDeviceMode }) {
 		setAddModeModalOpen(true);
 	};
 
+	const handleBackToNameClick = () => {
+		setAddDeviceModalOpen(false);
+		setNameModeModalOpen(true);
+	};
+
 	return (
 		<div className="modes slider">
 			<div className="mode-tile">
@@ -59,7 +64,7 @@ export default function ModeTiles({ onAddCustomMode, onAddDeviceMode }) {
 					<AddDeviceModal
 						isOpen={isAddDeviceModalOpen}
 						onClose={() => setAddDeviceModalOpen(false)}
-						onBack={handleBackClick}
+						onBackToNameMode={handleBackToNameClick}
 					/>
 					<p>Add Mode</p>
 				</div>
