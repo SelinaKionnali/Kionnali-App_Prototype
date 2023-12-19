@@ -133,3 +133,13 @@ p {
   letter-spacing: -0.48px;
   color: #000000;
 }
+
+.toggle-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  margin: 8px;
+}

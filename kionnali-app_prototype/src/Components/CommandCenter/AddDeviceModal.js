@@ -1,4 +1,7 @@
+import TileSmlRect from "../TileComponents/TileSmlRect";
+import Toggle from "../Toggle";
 import styles from "./AddModeModal.module.css";
+import RoomSlider from "./RoomSlider";
 
 export default function AddDeviceModal({ onBackToNameMode, onClose, isOpen }) {
 	if (!isOpen) return null;
@@ -22,6 +25,25 @@ export default function AddDeviceModal({ onBackToNameMode, onClose, isOpen }) {
 						Add devices to
 						<br /> "Goodnight 😴"
 					</h3>
+					<br />
+					<RoomSlider />
+					<br />
+					<TileSmlRect
+						status1="Smart TV"
+						status2="Air Conditioner"
+					/>
+					<TileSmlRect
+						status1="Air Purifier"
+						status2="Smart Light 1"
+					/>
+					<TileSmlRect
+						status1="Fan"
+						status2="Smart Light 2"
+					/>
+					<br />
+					<br />
+
+					<button className={styles.addModeBtn}>Continue</button>
 					<br />
 					<p onClick={onBackToNameMode}>Back</p>
 					<br />

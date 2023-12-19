@@ -135,6 +135,13 @@
   margin: 16px;
 }
 
+.progressStepperThree {
+  background: url("../../Assets/CommandCenter/progressStepperThree.png") no-repeat center center;
+  height: 28px;
+  width: 332px;
+  margin: 16px;
+}
+
 
 .nameModeInputBox {
   display: flex;

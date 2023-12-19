@@ -1,14 +1,15 @@
 import "./TileLarge.css";
 import "../RoamsteadSystems/PowerSystem.css";
+import Toggle from "../Toggle";
 
 export default function TileSmlSquare({ status1, status2 }) {
 	return (
 		<div className="sml-square-tile-container">
 			<div className="sml-square-tile">
-				<h3>{status1}</h3>
+				<p>{status1}</p>
 			</div>
 			<div className="sml-square-tile">
-				<h3>{status2}</h3>
+				<p>{status2}</p>
 			</div>
 		</div>
 	);
