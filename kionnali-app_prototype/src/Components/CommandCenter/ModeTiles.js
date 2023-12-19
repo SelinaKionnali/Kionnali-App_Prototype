@@ -8,11 +8,17 @@ import movieModePopcorn from "../../Assets/CommandCenter/movieModePopcorn.png";
 import AddModeModal from "./AddModeModal";
 import NameModeModal from "./NameModeModal";
 import AddDeviceModal from "./AddDeviceModal";
+import ScheduleModal from "./ScheduleModal";
 
-export default function ModeTiles({ onAddCustomMode, onAddDeviceMode }) {
+export default function ModeTiles({
+	onAddCustomMode,
+	onAddDeviceMode,
+	onScheduleMode,
+}) {
 	const [isAddModalOpen, setAddModeModalOpen] = useState(false);
 	const [isNameModalOpen, setNameModeModalOpen] = useState(false);
 	const [isAddDeviceModalOpen, setAddDeviceModalOpen] = useState(false);
+	const [isScheduleModalOpen, setScheduleModeModalOpen] = useState(false);
 
 	const handleAddCustomMode = () => {
 		setAddModeModalOpen(false);
@@ -24,9 +30,13 @@ export default function ModeTiles({ onAddCustomMode, onAddDeviceMode }) {
 		setAddDeviceModalOpen(true);
 	};
 
+	const handleContinueToScheduleClick = () => {
+		setAddDeviceModalOpen(false);
+		setScheduleModeModalOpen(true);
+	};
+
 	const handleModalOpen = () => {
 		setAddModeModalOpen(true);
-		console.log("Add Mode button clicked");
 	};
 
 	const handleModalClose = () => {
@@ -65,6 +75,11 @@ export default function ModeTiles({ onAddCustomMode, onAddDeviceMode }) {
 						isOpen={isAddDeviceModalOpen}
 						onClose={() => setAddDeviceModalOpen(false)}
 						onBackToNameMode={handleBackToNameClick}
+						onScheduleMode={handleContinueToScheduleClick}
+					/>
+					<ScheduleModal
+						isOpen={isScheduleModalOpen}
+						onClose={() => setScheduleModeModalOpen(false)}
 					/>
 					<p>Add Mode</p>
 				</div>

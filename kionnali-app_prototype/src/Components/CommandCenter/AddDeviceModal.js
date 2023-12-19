@@ -1,5 +1,4 @@
 import TileSmlRect from "../TileComponents/TileSmlRect";
-import Toggle from "../Toggle";
 import styles from "./AddModeModal.module.css";
 import RoomSlider from "./RoomSlider";
 import tvIcon from "../../Assets/CommandCenter/tvIcon.png";
@@ -8,8 +7,17 @@ import airIcon from "../../Assets/CommandCenter/airIcon.png";
 import bulbIcon from "../../Assets/CommandCenter/bulbIcon.png";
 import fanIcon from "../../Assets/CommandCenter/fanIcon.png";
 
-export default function AddDeviceModal({ onBackToNameMode, onClose, isOpen }) {
+export default function AddDeviceModal({
+	onBackToNameMode,
+	onClose,
+	isOpen,
+	onScheduleMode,
+}) {
 	if (!isOpen) return null;
+
+	const handleContinuetoScheduleClick = () => {
+		onScheduleMode();
+	};
 
 	return (
 		<>
@@ -84,7 +92,11 @@ export default function AddDeviceModal({ onBackToNameMode, onClose, isOpen }) {
 					<br />
 					<br />
 
-					<button className={styles.addModeBtn}>Continue</button>
+					<button
+						className={styles.addModeBtn}
+						onClick={handleContinuetoScheduleClick}>
+						Continue
+					</button>
 					<br />
 					<p onClick={onBackToNameMode}>Back</p>
 					<div className={styles.progressStepperThree}></div>
