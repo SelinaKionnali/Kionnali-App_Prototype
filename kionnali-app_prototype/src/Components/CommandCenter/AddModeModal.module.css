@@ -5,7 +5,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10; /* Ensure it's above other content */
+  z-index: 12; /* Ensure it's above other content */
 }
 
 .modalContent {
@@ -23,7 +23,7 @@
   border-radius: 30px;
   background: white;
   padding: 20px;
-  z-index: 11;
+  z-index: 13;
   box-sizing: border-box; /* Ensures padding is included in width/height */
 }
 

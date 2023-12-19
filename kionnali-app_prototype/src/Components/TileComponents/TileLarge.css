@@ -143,3 +143,24 @@ p {
   height: fit-content;
   margin: 8px;
 }
+
+.text-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: fit-content;
+  margin: 8px;
+  padding: 0 0 0 40px;
+}
+
+.text-wrap p {
+  color: black;
+}
+
+.sml-rectangle:hover {
+  background: rgb(219, 219, 219);
+  color: #FFF;
+  cursor: pointer;
+}
