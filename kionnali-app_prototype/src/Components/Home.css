@@ -64,23 +64,20 @@
 .sign-in-button {
   position: absolute;
   bottom: 12%;
-  left: 50%;
-  transform: translateX(-50%);
-
+  left: 9%;
+  border: none;
+  color: black;
+  font-family: Quicksand;
+  font-size: 16px;
   width: 304px;
-height: 48px;
-flex-shrink: 0;
-display: flex;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px #00000040, inset -1px -1px 4px #00000040, inset 1px 1px 4px #ffffff40;
+  background: linear-gradient(180deg, rgb(255, 230.69, 144.5) 0%, rgb(255, 183.18, 75.44) 100%);
+  margin: 8px;
+  cursor: pointer;
 
-flex-direction: column;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
-color: var(--Dark-Green, #435A10);
-border-radius: var(--main-system-10-px, 10px);
-background: linear-gradient(114deg, #FFE790 6.9%, #FFB74B 85%);
-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.25), -1px -1px 4px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 4px 0px rgba(255, 255, 255, 0.25) inset;
-transition: all 0.1s ease;
 
 /* Button text */
 font-family: Quicksand;
@@ -92,10 +89,10 @@ text-align: center;
 }
 
 .sign-in-button:hover {
-  background: linear-gradient(114deg, #ffd564 6.9%, #ffad42 85%); /* Slightly different gradient */
-  box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.35), -2px -2px 6px 0px rgba(0, 0, 0, 0.35) inset, 2px 2px 6px 0px rgba(255, 255, 255, 0.35) inset;
-  transform: translateX(-50%) scale(1.05); /* Slight increase in size */
+  box-shadow: inset 4px 4px 8px #0000007b;
   cursor: pointer;
+  transform: translateX(0%) scale(1.03); /* Slight increase in size */
+
 }
 
 .sign-up-button {
