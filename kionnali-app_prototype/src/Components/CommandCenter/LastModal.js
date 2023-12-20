@@ -1,16 +1,7 @@
 import styles from "./AddModeModal.module.css";
 
-export default function ScheduleModal({
-	onClose,
-	isOpen,
-	onLastMode,
-	onBackToDeviceMode,
-}) {
+export default function LastModal({ onClose, isOpen, onBackToScheduleMode }) {
 	if (!isOpen) return null;
-
-	const handleContinuetoLastStageClick = () => {
-		onLastMode();
-	};
 
 	return (
 		<div className={styles.modalWrapper}>
@@ -24,21 +15,25 @@ export default function ScheduleModal({
 						className={styles.closeBtn}
 						onClick={onClose}></div>
 				</div>
-				<h3 className={styles.title}>Schedule Mode</h3>
+				<div className={styles.tickImg}></div>
+				<br />
+				<br />
+				<h3 className={styles.title}>
+					New Scene added <br /> "Goodnight 😴"
+				</h3>
 				<br />
 				<button
 					className={styles.addModeBtn}
-					onClick={handleContinuetoLastStageClick}>
-					Continue
+					onClick={onClose}>
+					Done
 				</button>
 				<br />
 				<p
 					className={styles.backBtn}
-					onClick={onBackToDeviceMode}>
+					onClick={onBackToScheduleMode}>
 					Back
 				</p>
-
-				<div className={styles.progressStepperFour}></div>
+				<div className={styles.progressStepperFive}></div>
 			</div>
 		</div>
 	);

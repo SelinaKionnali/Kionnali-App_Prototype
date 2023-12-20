@@ -142,6 +142,32 @@
   margin: 16px;
 }
 
+.progressStepperFour {
+  background: url("../../Assets/CommandCenter/progressStepperFour.png") no-repeat center center;
+  height: 28px;
+  width: 332px;
+  margin: 16px;
+}
+
+.progressStepperFive {
+  background: url("../../Assets/CommandCenter/progressStepperFive.png") no-repeat center center;
+  height: 28px;
+  width: 332px;
+  margin: 16px;
+}
+
+.tickImg {
+  background: url("../../Assets/CommandCenter/tick.png") no-repeat center center;
+  height: 80px;
+  width: 80px;
+}
+
+.backBtn {
+  cursor: pointer;
+}
+.backBtn:hover {
+  transform: scale(1.1);
+}
 
 .nameModeInputBox {
   display: flex;

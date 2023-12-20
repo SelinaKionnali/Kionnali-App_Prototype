@@ -98,7 +98,11 @@ export default function AddDeviceModal({
 						Continue
 					</button>
 					<br />
-					<p onClick={onBackToNameMode}>Back</p>
+					<p
+						className={styles.backBtn}
+						onClick={onBackToNameMode}>
+						Back
+					</p>
 					<div className={styles.progressStepperThree}></div>
 				</div>
 			</div>

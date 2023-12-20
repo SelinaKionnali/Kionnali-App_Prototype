@@ -9,16 +9,19 @@ import AddModeModal from "./AddModeModal";
 import NameModeModal from "./NameModeModal";
 import AddDeviceModal from "./AddDeviceModal";
 import ScheduleModal from "./ScheduleModal";
+import LastModal from "./LastModal";
 
 export default function ModeTiles({
 	onAddCustomMode,
 	onAddDeviceMode,
 	onScheduleMode,
+	onLastMode,
 }) {
 	const [isAddModalOpen, setAddModeModalOpen] = useState(false);
 	const [isNameModalOpen, setNameModeModalOpen] = useState(false);
 	const [isAddDeviceModalOpen, setAddDeviceModalOpen] = useState(false);
 	const [isScheduleModalOpen, setScheduleModeModalOpen] = useState(false);
+	const [isLastModalOpen, setLastModalOpen] = useState(false);
 
 	const handleAddCustomMode = () => {
 		setAddModeModalOpen(false);
@@ -32,15 +35,17 @@ export default function ModeTiles({
 
 	const handleContinueToScheduleClick = () => {
 		setAddDeviceModalOpen(false);
+		setLastModalOpen(false);
 		setScheduleModeModalOpen(true);
+	};
+
+	const handleLastModeClick = () => {
+		setScheduleModeModalOpen(false);
+		setLastModalOpen(true);
 	};
 
 	const handleModalOpen = () => {
 		setAddModeModalOpen(true);
-	};
-
-	const handleModalClose = () => {
-		setAddModeModalOpen(false);
 	};
 
 	const handleBackClick = () => {
@@ -51,6 +56,11 @@ export default function ModeTiles({
 	const handleBackToNameClick = () => {
 		setAddDeviceModalOpen(false);
 		setNameModeModalOpen(true);
+	};
+
+	const handleBackToDeviceClick = () => {
+		setScheduleModeModalOpen(false);
+		setAddDeviceModalOpen(true);
 	};
 
 	return (
@@ -80,6 +90,13 @@ export default function ModeTiles({
 					<ScheduleModal
 						isOpen={isScheduleModalOpen}
 						onClose={() => setScheduleModeModalOpen(false)}
+						onBackToDeviceMode={handleBackToDeviceClick}
+						onLastMode={handleLastModeClick}
+					/>
+					<LastModal
+						isOpen={isLastModalOpen}
+						onClose={() => setLastModalOpen(false)}
+						onBackToScheduleMode={handleContinueToScheduleClick}
 					/>
 					<p>Add Mode</p>
 				</div>

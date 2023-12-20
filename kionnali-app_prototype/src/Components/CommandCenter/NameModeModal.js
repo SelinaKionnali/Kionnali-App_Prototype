@@ -47,7 +47,11 @@ export default function NameModeModal({
 						Continue
 					</button>
 					<br />
-					<p onClick={onBack}>Back</p>
+					<p
+						className={styles.backBtn}
+						onClick={onBack}>
+						Back
+					</p>
 					<br />
 					<div className={styles.progressStepperTwo}></div>
 				</div>
