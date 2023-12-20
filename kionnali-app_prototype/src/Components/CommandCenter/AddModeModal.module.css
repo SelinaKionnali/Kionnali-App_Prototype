@@ -119,6 +119,11 @@
   box-shadow: 2px 2px 6px #00000040, inset -1px -1px 4px #00000040, inset 1px 1px 4px #ffffff40;
   background: linear-gradient(180deg, rgb(255, 230.69, 144.5) 0%, rgb(255, 183.18, 75.44) 100%);
   margin: 8px;
+  cursor: pointer;
+}
+
+.addModeBtn:hover {
+  box-shadow: inset 2px 2px 4px #00000040;
 }
 
 .progressStepper {
