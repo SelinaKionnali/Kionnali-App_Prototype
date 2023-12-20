@@ -1,6 +1,5 @@
 import "./TileLarge.css";
 import "../RoamsteadSystems/PowerSystem.css";
-import Toggle from "../Toggle";
 
 export default function TileSmlSquare({ status1, status2 }) {
 	return (

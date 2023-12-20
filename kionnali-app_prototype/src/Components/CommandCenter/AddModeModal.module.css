@@ -21,7 +21,7 @@
   height: fit-content;
   max-width: 390px;
   border-radius: 30px;
-  background: white;
+  background:#EDEDED;
   padding: 20px;
   z-index: 13;
   box-sizing: border-box; /* Ensures padding is included in width/height */
@@ -52,7 +52,7 @@
 .suggestedModes, .suggestedModes h3{
   display: flex;
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: left;
   align-items: left;
   text-align: left;
@@ -61,9 +61,14 @@
 }
 
 .suggestedMode {
-  margin: 8px;
-
+display: flex;
+padding: 12px 16px;
+align-items: center;
+border-radius: 12px;
+background: #F7F7F7;
+margin: 10px 0 0 0;
 }
+
 
 .suggestedMode p {
   color: black;
@@ -71,13 +76,12 @@
   padding: 12px;
   margin-bottom: 8px;
   align-items: center;
-  background-color: #f7f7f7;
   border-radius: 12px;
 
 }
 
-.suggestedMode p:hover {
-  background-color: #ebebeb;
+.suggestedMode:hover {
+  box-shadow: inset 2px 2px 4px #00000040;
   cursor: pointer;
 } 
 
@@ -195,3 +199,69 @@ border-color: rgba(151, 188, 74, 1);
   width: 283px;
   height: 207px;
 }
+
+.headerToggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Full width of the modal */
+  padding: 0 10px;
+  margin: 0 0 10px 0; 
+}
+
+hr {
+  border: 1px solid #E4E4E4;
+  width: 90%;
+  margin: 0;
+}
+
+.tinyText {
+  font-size: 12px;
+  color: #9B9B9B;
+  margin: 0;
+  text-align: left;
+}
+
+.startDateText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+  height: fit-content;
+}
+
+.dateInput {
+  background: url("../../Assets/CommandCenter/calender.png") no-repeat center center;
+  width: 344px;
+  height: 40px;
+}
+
+.timeInput {
+  background: url("../../Assets/CommandCenter/time.png") no-repeat center center;
+  width: 344px;
+  height: 89px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 344px;
+  height: 40px;
+}
+
+.sunImg  {
+  background: url("../../Assets/CommandCenter/sun.png") no-repeat center center;
+  width: 40px;
+  height: 40px;
+}
+.moonImg  {
+  background: url("../../Assets/CommandCenter/moon.png") no-repeat center center;
+  width: 40px;
+  height: 40px;
+}
+
