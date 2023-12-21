@@ -14,6 +14,7 @@ export default function MenuPage() {
 	const [menuPageData, setMenuPageData] = useState(initialData);
 
 	const onDragEnd = (result) => {
+		console.log("Draggable ID:", result.draggableId);
 		const { destination, source, draggableId } = result;
 
 		if (!destination) {
@@ -104,6 +105,7 @@ export default function MenuPage() {
 				</header>
 				<div className="menu-section-container">
 					{menuPageData.columnOrder.map((columnId) => {
+						console.log("columnId: ", columnId);
 						const column = menuPageData.columns[columnId];
 						return (
 							<TileNarrow
@@ -115,13 +117,18 @@ export default function MenuPage() {
 									{column.title}
 									<img
 										src={threeDots}
-										alt=""
+										alt="drag and drop icon"
 										className="menu-title-three-dots"
 									/>
 								</h3>
 								<div className="menu-item-list">
 									{column.subpageIds.map((subpageId, index) => {
 										const subpage = menuPageData.subpages[subpageId];
+										console.log("subpage: ", subpage);
+										if (!subpage) {
+											console.log(`No subpage found for id: ${subpageId}`);
+											return null;
+										}
 										return (
 											<Draggable
 												key={subpageId}

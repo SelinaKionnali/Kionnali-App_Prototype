@@ -1,6 +1,4 @@
 import styles from "./AddModeModal.module.css";
-import sun from "../../Assets/CommandCenter/sun.png";
-import moon from "../../Assets/CommandCenter/moon.png";
 
 export default function AddModeModal({ isOpen, onClose, onAddCustomMode }) {
 	if (!isOpen) return null;
