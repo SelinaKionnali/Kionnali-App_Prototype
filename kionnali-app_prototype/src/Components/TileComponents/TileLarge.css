@@ -1,7 +1,6 @@
 .tile-large-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   flex-shrink: 0;
   height: fit-content;
@@ -11,9 +10,14 @@
 
 .large-tile {
 display: flex;
-justify-content: center;
-  margin: 8px;
+flex-direction: column;
 width: 330px;
+height: 176px;
+font-family: Quicksand;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+color: darkolivegreen;
 padding: 8px 23px 142px 16px;
 align-items: center;
 flex-shrink: 0;
