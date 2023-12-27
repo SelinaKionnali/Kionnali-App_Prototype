@@ -107,11 +107,11 @@ margin: 8px;
   flex-direction: column;
     margin: 8px;
   width: 335px;
-  height: 200px;
-  padding: 8px 23px 142px 16px;
+  height: 268px;
+  padding: 8px 23px 40px 16px;
   align-items: center;
   flex-shrink: 0;
-  border-radius: var(--main-system-20-px, 20px);
+  border-radius: 20px;
   background: #FFF;
   color:darkolivegreen;
 font-family: Quicksand;
@@ -120,6 +120,18 @@ font-family: Quicksand;
   /* tile drop shadow 1 */
   box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
   }
+
+  .tile-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin: 8px;
+  
+  }
+  
 
 p {
   display: flex;

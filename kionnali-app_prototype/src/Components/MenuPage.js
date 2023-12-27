@@ -124,7 +124,7 @@ export default function MenuPage() {
 								<div className="menu-item-list">
 									{column.subpageIds.map((subpageId, index) => {
 										const subpage = menuPageData.subpages[subpageId];
-										console.log("subpage: ", subpage);
+										console.log("Subpage Data: ", subpage);
 										if (!subpage) {
 											console.log(`No subpage found for id: ${subpageId}`);
 											return null;
