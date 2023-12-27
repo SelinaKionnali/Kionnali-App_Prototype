@@ -23,6 +23,7 @@ align-items: center;
 flex-shrink: 0;
 border-radius: var(--main-system-20-px, 20px);
 background: #FFF;
+margin: 8px;
 
 /* tile drop shadow 1 */
 box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);
@@ -44,7 +45,7 @@ align-items: flex-start;
 flex-direction: column;
   width: calc(50% - 4px);
 height: 268px;
-border-radius: var(--main-system-20-px, 20px);
+border-radius:20px;
 background: #FFF;
 margin-bottom: 8px;
 box-shadow: 5px 5px 8px 0px rgba(54, 70, 20, 0.10), -4px -4px 15px 0px rgba(46, 50, 40, 0.05);

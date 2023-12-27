@@ -8,6 +8,8 @@ import UsersPhoneImg from "../Assets/CommandCenter/UsersPhoneImg.png";
 import AllRoomsImg from "../Assets/CommandCenter/AllRoomsImg.png";
 import MusicTrackImg from "../Assets/CommandCenter/MusicTrackImg.png";
 import VolumeSliderImg from "../Assets/CommandCenter/VolumeSliderImg.png";
+import ButtonsWithSlider from "./ButtonWithSlider";
+import HvacImg from "../Assets/CommandCenter/HvacImg.png";
 
 export default function LivingPage() {
 	return (
@@ -21,11 +23,53 @@ export default function LivingPage() {
 				content={MusicTrackImg}
 				slider={VolumeSliderImg}
 			/>
-			<TileSmlSquare
-				title1="Living Page"
-				title2="Living Page"
+			<TileLarge
+				title1="HVAC"
+				watt1={WattImg}
+				img1={ThreeDots}
+				content2={HvacImg}
 			/>
-			<TileNarrow />
+
+			<div
+				className="narrow-tile-container"
+				style={{ margin: "8px" }}>
+				<TileNarrow
+					className="narrow-tile"
+					title1="Lights"
+					watt1={WattImg}
+					img1={ThreeDots}>
+					<div className="slider-container">
+						<ButtonsWithSlider
+							divClassName="buttons-with-slider-instance"
+							property1="unpressed"
+							text="Ceiling"
+						/>
+						<ButtonsWithSlider
+							divClassName="buttons-with-slider-instance"
+							property1="unpressed"
+							text="Lamp"
+						/>
+					</div>
+				</TileNarrow>
+				<TileNarrow
+					className="narrow-tile"
+					title1="Fans"
+					watt1={WattImg}
+					img1={ThreeDots}>
+					<div className="slider-container">
+						<ButtonsWithSlider
+							divClassName="buttons-with-slider-instance"
+							property1="unpressed"
+							text="Ceiling"
+						/>
+						<ButtonsWithSlider
+							divClassName="buttons-with-slider-instance"
+							property1="unpressed"
+							text="Vent"
+						/>
+					</div>
+				</TileNarrow>
+			</div>
 			<TileLarge />
 		</div>
 	);

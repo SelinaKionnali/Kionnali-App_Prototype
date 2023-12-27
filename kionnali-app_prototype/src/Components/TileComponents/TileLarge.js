@@ -7,6 +7,7 @@ export default function TileLarge({
 	info1,
 	info2,
 	slider,
+	content2,
 }) {
 	return (
 		<div
@@ -43,11 +44,22 @@ export default function TileLarge({
 					width: "100%",
 					gap: "8px",
 				}}>
-				<img
-					src={content}
-					alt=""
-					style={{ width: "259px", height: "82px", margin: "32px 0 0 0" }}
-				/>
+				{content && (
+					<img
+						src={content}
+						alt=""
+						style={{ width: "259px", height: "82px", margin: "32px 0 0 0" }}
+					/>
+				)}
+				{content2 && (
+					<img
+						src={content2}
+						alt=""
+						style={{
+							margin: "-100px 0 0",
+						}}
+					/>
+				)}
 				<img
 					src={slider}
 					alt=""
