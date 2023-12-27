@@ -1,22 +1,20 @@
-import "./TileLarge.css";
-import "../RoamsteadSystems/PowerSystem.css";
+import React from "react";
 
-export default function TileSmlSquare({
+export default function NarrowTiles({
 	title1,
-	title2,
 	img1,
-	img2,
 	content1,
-	content2,
 	watt1,
-	watt2,
 	p,
 	slider,
 	btns,
+	title2,
+	content2,
+	watt2,
 }) {
 	return (
-		<div className="sml-square-tile-container">
-			<div className="sml-square-tile">
+		<div className="narrow-tile-container">
+			<div className="narrow-tile">
 				<div
 					className="tile-heading"
 					style={{ width: "150px" }}>
@@ -37,11 +35,12 @@ export default function TileSmlSquare({
 						alt="watt icon"
 					/>
 				)}
-				{p && <p>{p}</p>}
+				{p && <p style={{ margin: "0" }}>{p}</p>}
 				{slider && (
 					<img
 						src={slider}
 						alt="volume slider"
+						style={{ margin: " 0 8px" }}
 					/>
 				)}
 				{btns && (
@@ -51,7 +50,7 @@ export default function TileSmlSquare({
 					/>
 				)}
 			</div>
-			<div className="sml-square-tile">
+			<div className="narrow-tile">
 				<div
 					className="tile-heading"
 					style={{ width: "150px" }}>
@@ -63,6 +62,7 @@ export default function TileSmlSquare({
 				</div>
 				<img
 					src={content2}
+					style={{ margin: "28px" }}
 					alt="open close icon"
 				/>
 				<img
