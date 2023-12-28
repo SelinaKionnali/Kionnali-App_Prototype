@@ -8,6 +8,8 @@ export default function TileLarge({
 	info2,
 	slider,
 	content2,
+	dropdown,
+	dropdownBtns,
 }) {
 	return (
 		<div
@@ -60,9 +62,26 @@ export default function TileLarge({
 						}}
 					/>
 				)}
+				{dropdown && (
+					<img
+						src={dropdown}
+						alt="dropdown box"
+						style={{
+							margin: "20px 0 0",
+							width: "259px",
+							height: "50px",
+						}}
+					/>
+				)}
+
 				<img
 					src={slider}
 					alt=""
+				/>
+				<img
+					src={dropdownBtns}
+					alt=""
+					style={{ margin: "-40px 0 0" }}
 				/>
 			</div>
 		</div>
