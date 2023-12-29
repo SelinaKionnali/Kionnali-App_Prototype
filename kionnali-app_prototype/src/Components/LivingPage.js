@@ -12,6 +12,7 @@ import HvacImg from "../Assets/CommandCenter/HvacImg.png";
 import BlindsDropdown from "../Assets/CommandCenter/BlindsDropdown.png";
 import OpenImg from "../Assets/CommandCenter/OpenImg.png";
 import DropdownBtnImg from "../Assets/CommandCenter/DropDownBtnImg.png";
+import AddDeviceBtnImg from "../Assets/CommandCenter/AddDeviceBtnImg.png";
 
 export default function LivingPage() {
 	return (
@@ -80,6 +81,10 @@ export default function LivingPage() {
 				info1={OpenImg}
 				info2={WattImg}
 				dropdownBtns={DropdownBtnImg}
+			/>
+			<img
+				src={AddDeviceBtnImg}
+				alt=""
 			/>
 			<br />
 			<br />
