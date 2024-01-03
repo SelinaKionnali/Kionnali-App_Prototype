@@ -1,3 +1,4 @@
+import React from "react";
 import "./TileLarge.css";
 
 export default function TileXL({ title, img1, content, watt1 }) {
@@ -11,15 +12,22 @@ export default function TileXL({ title, img1, content, watt1 }) {
 						alt="wattage"
 					/>
 				)}
-				<img
-					src={img1}
-					alt="drag and drop icon"
-				/>
+				{img1 && (
+					<img
+						src={img1}
+						alt="drag and drop icon"
+					/>
+				)}
 			</div>
-			<img
-				src={content}
-				alt="foundation level addjustment"
-			/>
+
+			{content && React.isValidElement(content) ? (
+				<div className="tile-content">{content}</div>
+			) : img1 ? (
+				<img
+					src={content}
+					alt="foundation level adjustment"
+				/>
+			) : null}
 		</div>
 	);
 }

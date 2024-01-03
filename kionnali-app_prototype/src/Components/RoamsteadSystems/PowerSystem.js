@@ -9,6 +9,7 @@ import TileSmlRect from "../TileComponents/TileSmlRect";
 import TileXL from "../TileComponents/TileXL";
 import TileNarrow from "../TileComponents/TileNarrow";
 import ButtonsWithSlider from "../ButtonWithSlider";
+import MyChart from "../../Data/MyChart";
 
 export default function PowerSystem() {
 	const powerStatus = "You are generating more than you are using today.";
@@ -60,8 +61,8 @@ export default function PowerSystem() {
 				/>
 				<TileXL
 					className="graph-tile"
-					title="Graph"
-					content="Graph of power usage"
+					title="Battery SOC Chart"
+					content={<MyChart />}
 				/>
 				<div className="narrow-tile-container">
 					<TileNarrow className="narrow-tile">
