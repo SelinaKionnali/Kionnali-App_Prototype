@@ -1,8 +1,8 @@
 import React from "react";
 import "./ForumPostsCard.css";
-import DBcommentIcon from "../Assets/Dashboard/DBcommentIcon.png";
-import DBheartIcon from "../Assets/Dashboard/DBheartIcon.png";
-import DBsendIcon from "../Assets/Dashboard/DBsendIcon.png";
+import DBcommentIcon from "../../Assets/Dashboard/DBcommentIcon.png";
+import DBheartIcon from "../../Assets/Dashboard/DBheartIcon.png";
+import DBsendIcon from "../../Assets/Dashboard/DBsendIcon.png";
 
 const ForumPostsCard = () => {
 	return (

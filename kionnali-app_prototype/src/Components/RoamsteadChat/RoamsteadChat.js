@@ -1,8 +1,8 @@
-import "../Components/CommandCenter/CommandCenter.css";
-import "../Components/RoamsteadChat.css";
-import HeaderBtns from "./HeaderBtns";
-import searchIcon from "../Assets/RoamsteadChat/searchIcon.png";
-import TileLarge from "./TileComponents/TileLarge";
+import "../../Components/CommandCenter/CommandCenter.css";
+import "../RoamsteadChat/RoamsteadChat.css";
+import HeaderBtns from "../Dashboard/HeaderBtns";
+import searchIcon from "../../Assets/RoamsteadChat/searchIcon.png";
+import TileLarge from "../TileComponents/TileLarge";
 
 export default function RoamsteadChat() {
 	return (

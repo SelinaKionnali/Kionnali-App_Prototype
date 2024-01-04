@@ -1,3 +1,5 @@
+// This component is no longer in use - it was replaced by the Header Buttons component.
+
 import { useState } from "react";
 import "./ChatToggle.css";
 

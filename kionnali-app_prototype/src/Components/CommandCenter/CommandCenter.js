@@ -1,7 +1,7 @@
 import yellowCircle from "../../Assets/CommandCenter/yellowCircle.png";
 import { useHistory } from "react-router-dom"; // if using react-router
-import ModeTiles from "./ModeTiles";
-import Menu from "../Menu";
+import ModeTiles from "../CommandCenter/Modes/ModeTiles";
+import Menu from "./SlidingRoomMenu/Menu";
 import "./CommandCenter.css";
 
 export default function CommandCenter() {

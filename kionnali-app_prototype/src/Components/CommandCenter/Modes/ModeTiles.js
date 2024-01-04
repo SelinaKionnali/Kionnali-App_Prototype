@@ -1,11 +1,11 @@
 import { useState } from "react";
-import "./ModeTiles.css";
-import Toggle from "../Toggle";
-import nightModeBed from "../../Assets/CommandCenter/nightModeBed.png";
-import morningModeCoffee from "../../Assets/CommandCenter/morningModeCoffee.png";
-import adventureModeMountain from "../../Assets/CommandCenter/adventureModeMountain.png";
-import movieModePopcorn from "../../Assets/CommandCenter/movieModePopcorn.png";
-import AddModeModal from "./AddModeModal";
+import "../Modes/ModeTiles.css";
+import Toggle from "../../Toggle";
+import nightModeBed from "../../../Assets/CommandCenter/nightModeBed.png";
+import morningModeCoffee from "../../../Assets/CommandCenter/morningModeCoffee.png";
+import adventureModeMountain from "../../../Assets/CommandCenter/adventureModeMountain.png";
+import movieModePopcorn from "../../../Assets/CommandCenter/movieModePopcorn.png";
+import AddModeModal from "../Modes/AddModeModal";
 import NameModeModal from "./NameModeModal";
 import AddDeviceModal from "./AddDeviceModal";
 import ScheduleModal from "./ScheduleModal";

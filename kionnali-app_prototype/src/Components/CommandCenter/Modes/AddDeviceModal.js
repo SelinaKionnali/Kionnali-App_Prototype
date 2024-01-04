@@ -1,11 +1,11 @@
-import TileSmlRect from "../TileComponents/TileSmlRect";
-import styles from "./AddModeModal.module.css";
-import RoomSlider from "./RoomSlider";
-import tvIcon from "../../Assets/CommandCenter/tvIcon.png";
-import windIcon from "../../Assets/CommandCenter/windIcon.png";
-import airIcon from "../../Assets/CommandCenter/airIcon.png";
-import bulbIcon from "../../Assets/CommandCenter/bulbIcon.png";
-import fanIcon from "../../Assets/CommandCenter/fanIcon.png";
+import TileSmlRect from "../../TileComponents/TileSmlRect";
+import styles from "../Modes/AddModeModal.module.css";
+import RoomSlider from "../RoomSlider";
+import tvIcon from "../../../Assets/CommandCenter/tvIcon.png";
+import windIcon from "../../../Assets/CommandCenter/windIcon.png";
+import airIcon from "../../../Assets/CommandCenter/airIcon.png";
+import bulbIcon from "../../../Assets/CommandCenter/bulbIcon.png";
+import fanIcon from "../../../Assets/CommandCenter/fanIcon.png";
 
 export default function AddDeviceModal({
 	onBackToNameMode,

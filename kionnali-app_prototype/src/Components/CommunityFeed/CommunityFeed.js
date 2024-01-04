@@ -1,4 +1,6 @@
-import "./CommandCenter/CommandCenter.css";
+// Note: Community Feed Component
+
+import "../CommandCenter/CommandCenter.css";
 import "./CommunityFeed.css";
 
 export default function CommunityFeed() {

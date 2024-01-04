@@ -97,7 +97,7 @@ margin: 10px 0 0 0;
 }
 
 .closeBtn {
-  background: url("../../Assets/CommandCenter/closeX.svg") no-repeat center center;
+  background: url("../../../Assets/CommandCenter/closeX.svg") no-repeat center center;
   height: 20px;
   width: 20px;
   cursor: pointer;
@@ -105,7 +105,7 @@ margin: 10px 0 0 0;
 }
 
 .divider {
-  background: url("../../Assets/CommandCenter/orDivider.svg") no-repeat center center;
+  background: url("../../../Assets/CommandCenter/orDivider.svg") no-repeat center center;
   height: 16px;
   width: 100%;
   margin: 8px;
@@ -131,42 +131,42 @@ margin: 10px 0 0 0;
 }
 
 .progressStepper {
-  background: url("../../Assets/CommandCenter/progressStepper.png") no-repeat center center;
+  background: url("../../../Assets/CommandCenter/progressStepper.png") no-repeat center center;
   height: 28px;
   width: 332px;
   margin: 16px;
 }
 
 .progressStepperTwo {
-  background: url("../../Assets/CommandCenter/progressStepperTwo.png") no-repeat center center;
+  background: url("../../../Assets/CommandCenter/progressStepperTwo.png") no-repeat center center;
   height: 28px;
   width: 332px;
   margin: 16px;
 }
 
 .progressStepperThree {
-  background: url("../../Assets/CommandCenter/progressStepperThree.png") no-repeat center center;
+  background: url("../../../Assets/CommandCenter/progressStepperThree.png") no-repeat center center;
   height: 28px;
   width: 332px;
   margin: 16px;
 }
 
 .progressStepperFour {
-  background: url("../../Assets/CommandCenter/progressStepperFour.png") no-repeat center center;
+  background: url("../../../Assets/CommandCenter/progressStepperFour.png") no-repeat center center;
   height: 28px;
   width: 332px;
   margin: 16px;
 }
 
 .progressStepperFive {
-  background: url("../../Assets/CommandCenter/progressStepperFive.png") no-repeat center center;
+  background: url("../../../Assets/CommandCenter/progressStepperFive.png") no-repeat center center;
   height: 28px;
   width: 332px;
   margin: 16px;
 }
 
 .tickImg {
-  background: url("../../Assets/CommandCenter/tick.png") no-repeat center center;
+  background: url("../../../Assets/CommandCenter/tick.png") no-repeat center center;
   height: 80px;
   width: 80px;
 }
@@ -195,7 +195,7 @@ border-color: rgba(151, 188, 74, 1);
 }
 
 .pickAnIcon {
-  background: url("../../Assets/CommandCenter/PickAnIcon.png") no-repeat center center;
+  background: url("../../../Assets/CommandCenter/PickAnIcon.png") no-repeat center center;
   width: 283px;
   height: 207px;
 }
@@ -234,13 +234,13 @@ hr {
 }
 
 .dateInput {
-  background: url("../../Assets/CommandCenter/calender.png") no-repeat center center;
+  background: url("../../../Assets/CommandCenter/calender.png") no-repeat center center;
   width: 344px;
   height: 40px;
 }
 
 .timeInput {
-  background: url("../../Assets/CommandCenter/time.png") no-repeat center center;
+  background: url("../../../Assets/CommandCenter/time.png") no-repeat center center;
   width: 344px;
   height: 89px;
 }
@@ -255,12 +255,12 @@ hr {
 }
 
 .sunImg  {
-  background: url("../../Assets/CommandCenter/sun.png") no-repeat center center;
+  background: url("../../../Assets/CommandCenter/sun.png") no-repeat center center;
   width: 40px;
   height: 40px;
 }
 .moonImg  {
-  background: url("../../Assets/CommandCenter/moon.png") no-repeat center center;
+  background: url("../../../Assets/CommandCenter/moon.png") no-repeat center center;
   width: 40px;
   height: 40px;
 }

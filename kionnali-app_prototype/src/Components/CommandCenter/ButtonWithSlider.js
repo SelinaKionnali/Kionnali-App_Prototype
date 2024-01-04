@@ -1,3 +1,5 @@
+// Description: These slider buttons are used in Living/Dining/Kitchen page within the Command Centre.
+
 import "./ButtonWithSlider.css";
 
 export default function ButtonsWithSlider({

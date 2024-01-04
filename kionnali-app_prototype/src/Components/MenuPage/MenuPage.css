@@ -4,7 +4,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background: url(../Assets/MenuPage/MenuHeaderBG.png);
+    background: url(../../Assets/MenuPage/MenuHeaderBG.png);
     background-size: cover;
     background-position: center;
     width: 394px;

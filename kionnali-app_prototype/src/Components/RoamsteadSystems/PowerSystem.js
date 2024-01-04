@@ -1,6 +1,6 @@
 import "../CommandCenter/CommandCenter.css";
 import "./PowerSystem.css";
-import "../Dashboard.css";
+import "../Dashboard/Dashboard.css";
 import "../TileComponents/TileLarge.css";
 import PowerSystemMainImg from "../../Assets/PowerSystem/PowerSystemMainImg.png";
 import SystemStatusBox from "./SystemStatusBox";
@@ -8,7 +8,7 @@ import TileSmlSquare from "../TileComponents/TileSmlSquare";
 import TileSmlRect from "../TileComponents/TileSmlRect";
 import TileXL from "../TileComponents/TileXL";
 import TileNarrow from "../TileComponents/TileNarrow";
-import ButtonsWithSlider from "../ButtonWithSlider";
+import ButtonsWithSlider from "../CommandCenter/ButtonWithSlider";
 import MyChart from "../../Data/MyChart";
 
 export default function PowerSystem() {

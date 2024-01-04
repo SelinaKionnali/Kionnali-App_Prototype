@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { DragDropContext, Draggable } from "react-beautiful-dnd";
 import "./MenuPage.css";
-import "../Components/CommandCenter/CommandCenter.css";
-import settingsIcon from "../Assets/MenuPage/settingsIcon.png";
-import profilePicture from "../Assets/MenuPage/ProfilePicture.png";
-import backArrow from "../Assets/MenuPage/backArrow.png";
-import TileNarrow from "./TileComponents/TileNarrow";
-import threeDots from "../Assets/Dashboard/threeDots.png";
+import "../CommandCenter/CommandCenter.css";
+import settingsIcon from "../../Assets/MenuPage/settingsIcon.png";
+import profilePicture from "../../Assets/MenuPage/ProfilePicture.png";
+import backArrow from "../../Assets/MenuPage/backArrow.png";
+import TileNarrow from "../TileComponents/TileNarrow";
+import threeDots from "../../Assets/Dashboard/threeDots.png";
 import { Link } from "react-router-dom";
 import initialData from "./MenuPageDataTwo";
 

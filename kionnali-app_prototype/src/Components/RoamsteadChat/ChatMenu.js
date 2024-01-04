@@ -1,8 +1,10 @@
+// This component is no longer in use - it was replaced by the Header Buttons component.
+
 import React, { useState, useEffect, useRef } from "react";
 import "./ChatMenu.css";
-import ShellPage from "./ShellPage";
-import LivingPage from "./LivingPage";
-import DiningPage from "./DiningPage";
+import ShellPage from "../CommandCenter/SlidingRoomMenu/ShellPage";
+import LivingPage from "../CommandCenter/SlidingRoomMenu/LivingPage";
+import DiningPage from "../CommandCenter/SlidingRoomMenu/DiningPage";
 
 export default function ChatMenu() {
 	const [active, setActive] = useState("History"); // "History" is the default active menu item

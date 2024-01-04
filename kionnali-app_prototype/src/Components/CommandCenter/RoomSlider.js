@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./ModeTiles.css";
+import "./Modes/ModeTiles.css";
 
 export default function RoomSlider() {
 	const [isRoomActive, setRoomActive] = useState("Master Bed");

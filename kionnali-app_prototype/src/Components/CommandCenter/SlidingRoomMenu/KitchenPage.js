@@ -1,20 +1,20 @@
-import "./TileComponents/TileLarge.css";
-import TileLarge from "./TileComponents/TileLarge";
-import TileNarrow from "./TileComponents/TileNarrow";
-import ThreeDots from "../Assets/Dashboard/threeDots.png";
-import WattImg from "../Assets/CommandCenter/WattImg.png";
-import UsersPhoneImg from "../Assets/CommandCenter/UsersPhoneImg.png";
-import AllRoomsImg from "../Assets/CommandCenter/AllRoomsImg.png";
-import MusicTrackImg from "../Assets/CommandCenter/MusicTrackImg.png";
-import VolumeSliderImg from "../Assets/CommandCenter/VolumeSliderImg.png";
-import ButtonsWithSlider from "./ButtonWithSlider";
-import HvacImg from "../Assets/CommandCenter/HvacImg.png";
-import BlindsDropdown from "../Assets/CommandCenter/BlindsDropdown.png";
-import OpenImg from "../Assets/CommandCenter/OpenImg.png";
-import DropdownBtnImg from "../Assets/CommandCenter/DropDownBtnImg.png";
-import AddDeviceBtnImg from "../Assets/CommandCenter/AddDeviceBtnImg.png";
+import "../../TileComponents/TileLarge.css";
+import TileLarge from "../../TileComponents/TileLarge";
+import TileNarrow from "../../TileComponents/TileNarrow";
+import ThreeDots from "../../../Assets/Dashboard/threeDots.png";
+import WattImg from "../../../Assets/CommandCenter/WattImg.png";
+import UsersPhoneImg from "../../../Assets/CommandCenter/UsersPhoneImg.png";
+import AllRoomsImg from "../../../Assets/CommandCenter/AllRoomsImg.png";
+import MusicTrackImg from "../../../Assets/CommandCenter/MusicTrackImg.png";
+import VolumeSliderImg from "../../../Assets/CommandCenter/VolumeSliderImg.png";
+import ButtonsWithSlider from "../../CommandCenter/ButtonWithSlider";
+import HvacImg from "../../../Assets/CommandCenter/HvacImg.png";
+import BlindsDropdown from "../../../Assets/CommandCenter/BlindsDropdown.png";
+import OpenImg from "../../../Assets/CommandCenter/OpenImg.png";
+import DropdownBtnImg from "../../../Assets/CommandCenter/DropDownBtnImg.png";
+import AddDeviceBtnImg from "../../../Assets/CommandCenter/AddDeviceBtnImg.png";
 
-export default function DiningPage() {
+export default function KitchenPage() {
 	return (
 		<div className="tile-large-container">
 			<TileLarge
@@ -74,7 +74,7 @@ export default function DiningPage() {
 				</TileNarrow>
 			</div>
 			<TileLarge
-				title1="Dining Room Blinds"
+				title1="Kitchen Blinds"
 				watt1={WattImg}
 				img1={ThreeDots}
 				dropdown={BlindsDropdown}

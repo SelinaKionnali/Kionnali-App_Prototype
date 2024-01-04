@@ -4,14 +4,14 @@ import {
 	Switch,
 	useLocation,
 } from "react-router-dom";
-import Home from "./Components/Home";
+import Home from "./Components/LandingPage/Home";
 import "./App.css";
-import Dashboard from "./Components/Dashboard";
+import Dashboard from "./Components/Dashboard/Dashboard";
 import CommandCenter from "./Components/CommandCenter/CommandCenter";
 import StickyFooter from "./Components/StickyFooter";
-import RoamsteadChat from "./Components/RoamsteadChat";
-import CommunityFeed from "./Components/CommunityFeed";
-import MenuPage from "./Components/MenuPage";
+import RoamsteadChat from "./Components/RoamsteadChat/RoamsteadChat";
+import CommunityFeed from "./Components/CommunityFeed/CommunityFeed";
+import MenuPage from "./Components/MenuPage/MenuPage";
 import PowerSystem from "./Components/RoamsteadSystems/PowerSystem";
 import CompareSystems from "./Components/RoamsteadSystems/CompareSystems";
 import FoodSystem from "./Components/RoamsteadSystems/FoodSystem";
@@ -19,7 +19,7 @@ import WaterSystem from "./Components/RoamsteadSystems/WaterSystem";
 import ThermalSystem from "./Components/RoamsteadSystems/ThermalSystem";
 import CompostSystem from "./Components/RoamsteadSystems/CompostSystem";
 import EVSystem from "./Components/RoamsteadSystems/EVSystem";
-import TestMenuPageTwo from "./Components/TestMenuPageTwo";
+import TestMenuPageTwo from "./Components/MenuPage/TestMenuPageTwo";
 
 function AppWithFooter() {
 	let location = useLocation();

@@ -1,3 +1,5 @@
+// Note: This is the Command Center component that renders the sliding menu bar and the room pages
+
 import React, { useState, useEffect, useRef } from "react";
 import "./Menu.css";
 import ShellPage from "./ShellPage";

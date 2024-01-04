@@ -1,17 +1,17 @@
-import "./TileComponents/TileLarge.css";
-import TileSmlSquare from "./TileComponents/TileSmlSquare";
-import TileXL from "./TileComponents/TileXL";
-import FoundationImg from "../Assets/CommandCenter/FoundationImg.png";
-import ThreeDots from "../Assets/Dashboard/threeDots.png";
-import OpenCloseImg from "../Assets/CommandCenter/OpenCloseImg.png";
-import WattImg from "../Assets/CommandCenter/WattImg.png";
-import DoorOpenCloseImg from "../Assets/CommandCenter/DoorOpenCloseImg.png";
-import StandbyImg from "../Assets/CommandCenter/StandbyImg.png";
-import DoorbellImg from "../Assets/CommandCenter/DoorbellImg.png";
-import volume from "../Assets/CommandCenter/volume.png";
-import doorbellBtns from "../Assets/CommandCenter/doorbellBtns.png";
-import NarrowTiles from "./TileComponents/NarrowTiles";
-import SolarPanelImg from "../Assets/CommandCenter/SolarPanelImg.png";
+import "../../TileComponents/TileLarge.css";
+import TileSmlSquare from "../../TileComponents/TileSmlSquare";
+import TileXL from "../../TileComponents/TileXL";
+import FoundationImg from "../../../Assets/CommandCenter/FoundationImg.png";
+import ThreeDots from "../../../Assets/Dashboard/threeDots.png";
+import OpenCloseImg from "../../../Assets/CommandCenter/OpenCloseImg.png";
+import WattImg from "../../../Assets/CommandCenter/WattImg.png";
+import DoorOpenCloseImg from "../../../Assets/CommandCenter/DoorOpenCloseImg.png";
+import StandbyImg from "../../../Assets/CommandCenter/StandbyImg.png";
+import DoorbellImg from "../../../Assets/CommandCenter/DoorbellImg.png";
+import volume from "../../../Assets/CommandCenter/volume.png";
+import doorbellBtns from "../../../Assets/CommandCenter/doorbellBtns.png";
+import NarrowTiles from "../../../Components/TileComponents/NarrowTiles";
+import SolarPanelImg from "../../../Assets/CommandCenter/SolarPanelImg.png";
 
 export default function ShellPage({ title, img1, content }) {
 	return (

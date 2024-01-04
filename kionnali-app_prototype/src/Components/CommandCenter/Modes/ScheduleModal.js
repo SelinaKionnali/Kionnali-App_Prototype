@@ -1,4 +1,4 @@
-import Toggle from "../Toggle";
+import Toggle from "../../Toggle";
 import styles from "./AddModeModal.module.css";
 
 export default function ScheduleModal({

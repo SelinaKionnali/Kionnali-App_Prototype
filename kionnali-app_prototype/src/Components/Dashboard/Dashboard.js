@@ -1,15 +1,15 @@
 // Desc: Dashboard component
 import "./Dashboard.css";
-import "../Components/CommandCenter/CommandCenter.css";
+import "../../Components/CommandCenter/CommandCenter.css";
 import { useState } from "react";
-import { useHistory } from "react-router-dom"; // if using react-router
-import ForumPostsCard from "./ForumPostsCard";
+import { useHistory } from "react-router-dom";
+import ForumPostsCard from "../Dashboard/ForumPostsCard";
 import MarketplaceCard from "./MarketplaceCard";
 import SystemPlanning from "./SystemPlanning";
-import "../Components/StickyFooter.css";
+import "../../Components/StickyFooter.css";
 
 export default function Dashboard(props) {
-	let history = useHistory(); // if using react-router
+	let history = useHistory();
 
 	const [isExpanded, setIsExpanded] = useState(false);
 
@@ -80,7 +80,7 @@ export default function Dashboard(props) {
 				<div className="dashboard">
 					<div className="welcome"></div>
 					<div className="off-grid"></div>
-
+					*/can be replaced with HeaderBtns Component/*
 					<div className="rounded-tile">
 						<button
 							className="weather-button"

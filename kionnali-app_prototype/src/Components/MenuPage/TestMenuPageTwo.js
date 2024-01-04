@@ -15,7 +15,7 @@ export default function TestMenuPageTwo() {
 					);
 					console.log(subpages);
 
-					return 
+					return;
 				})}
 			</div>
 		</>

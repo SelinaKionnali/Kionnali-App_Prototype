@@ -1,6 +1,6 @@
 import "./MarketplaceCard.css";
-import DBmarketplaceImage from "../Assets/Dashboard/DBmarketplaceImage.png";
-import DBpagination from "../Assets/Dashboard/DBpagination.png";
+import DBmarketplaceImage from "../../Assets/Dashboard/DBmarketplaceImage.png";
+import DBpagination from "../../Assets/Dashboard/DBpagination.png";
 
 const MarketplaceCard = () => {
 	return (
