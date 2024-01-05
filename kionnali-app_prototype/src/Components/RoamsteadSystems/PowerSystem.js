@@ -5,8 +5,6 @@ import "../TileComponents/TileLarge.css";
 import PowerSystemMainImg from "../../Assets/PowerSystem/PowerSystemMainImg.png";
 import SystemStatusBox from "./SystemStatusBox";
 import TileXL from "../TileComponents/TileXL";
-import TileNarrow from "../TileComponents/TileNarrow";
-import ButtonsWithSlider from "../CommandCenter/ButtonWithSlider";
 import MyChart from "../../Data/MyChart";
 import BatteryChargeStatus from "../../Assets/PowerSystem/BatteryChargeStatus.png";
 import LightandFanTiles from "../../Assets/PowerSystem/LightandFanTiles.png";
@@ -28,7 +26,7 @@ export default function PowerSystem() {
 					status={powerStatus}
 					expandedContent={expandedContent}
 				/>
-				<div style={{ margin: "-8px", border: "1px solid red" }}>
+				<div style={{ margin: "-16px" }}>
 					<img
 						src={BatteryChargeStatus}
 						alt="Battery Charge Status"
@@ -39,10 +37,12 @@ export default function PowerSystem() {
 					title="Battery SOC Chart"
 					content={<MyChart />}
 				/>
-				<img
-					src={LightandFanTiles}
-					alt=""
-				/>
+				<div style={{ margin: "-16px" }}>
+					<img
+						src={LightandFanTiles}
+						alt=""
+					/>
+				</div>
 				<TileXL
 					className="graph-tile"
 					title="Solar Panel Gain"
