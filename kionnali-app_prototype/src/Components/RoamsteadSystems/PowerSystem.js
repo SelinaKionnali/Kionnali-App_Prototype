@@ -8,7 +8,8 @@ import TileXL from "../TileComponents/TileXL";
 import TileNarrow from "../TileComponents/TileNarrow";
 import ButtonsWithSlider from "../CommandCenter/ButtonWithSlider";
 import MyChart from "../../Data/MyChart";
-import BatteryChargeStatus from "../../Assets/Dashboard/BatteryChargeStatus.png";
+import BatteryChargeStatus from "../../Assets/PowerSystem/BatteryChargeStatus.png";
+import LightandFanTiles from "../../Assets/PowerSystem/LightandFanTiles.png";
 
 export default function PowerSystem() {
 	const powerStatus = "You are generating more than you are using today.";
@@ -27,51 +28,25 @@ export default function PowerSystem() {
 					status={powerStatus}
 					expandedContent={expandedContent}
 				/>
-				<img
-					src={BatteryChargeStatus}
-					alt=""
-				/>
+				<div style={{ margin: "-8px", border: "1px solid red" }}>
+					<img
+						src={BatteryChargeStatus}
+						alt="Battery Charge Status"
+					/>
+				</div>
 				<TileXL
 					className="graph-tile"
 					title="Battery SOC Chart"
 					content={<MyChart />}
 				/>
-				<div className="narrow-tile-container">
-					<TileNarrow className="narrow-tile">
-						<h3>Lights 18W</h3>
-						<div className="slider-container">
-							<ButtonsWithSlider
-								divClassName="buttons-with-slider-instance"
-								property1="unpressed"
-								text="Ceiling"
-							/>
-							<ButtonsWithSlider
-								divClassName="buttons-with-slider-instance"
-								property1="unpressed"
-								text="Lamp"
-							/>
-						</div>
-					</TileNarrow>
-					<TileNarrow className="narrow-tile">
-						<h3>Fans 23W</h3>
-						<div className="slider-container">
-							<ButtonsWithSlider
-								divClassName="buttons-with-slider-instance"
-								property1="unpressed"
-								text="Ceiling"
-							/>
-							<ButtonsWithSlider
-								divClassName="buttons-with-slider-instance"
-								property1="unpressed"
-								text="Vent"
-							/>
-						</div>
-					</TileNarrow>
-				</div>
+				<img
+					src={LightandFanTiles}
+					alt=""
+				/>
 				<TileXL
 					className="graph-tile"
 					title="Solar Panel Gain"
-					content="Graph for solar panel gain"
+					content={<MyChart />}
 				/>
 			</div>
 		</div>
