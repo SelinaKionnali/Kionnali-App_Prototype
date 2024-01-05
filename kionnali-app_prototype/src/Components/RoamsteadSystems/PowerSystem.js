@@ -4,38 +4,16 @@ import "../Dashboard/Dashboard.css";
 import "../TileComponents/TileLarge.css";
 import PowerSystemMainImg from "../../Assets/PowerSystem/PowerSystemMainImg.png";
 import SystemStatusBox from "./SystemStatusBox";
-import TileSmlSquare from "../TileComponents/TileSmlSquare";
-import TileSmlRect from "../TileComponents/TileSmlRect";
 import TileXL from "../TileComponents/TileXL";
 import TileNarrow from "../TileComponents/TileNarrow";
 import ButtonsWithSlider from "../CommandCenter/ButtonWithSlider";
 import MyChart from "../../Data/MyChart";
+import BatteryChargeStatus from "../../Assets/Dashboard/BatteryChargeStatus.png";
 
 export default function PowerSystem() {
 	const powerStatus = "You are generating more than you are using today.";
 	const expandedContent =
 		"You are generating more than you are using today. This means that you are storing energy in your battery for later use.";
-
-	const battery = "Battery Charge";
-	const devices = (
-		<>
-			<h3>Devices</h3>
-			<p>Cooker, fridge, TV, washing machine</p>
-		</>
-	);
-	const circuitStatus = (
-		<>
-			<h3>Power Status</h3>
-			<p>All circuits good</p>
-		</>
-	);
-
-	const ghostDrain = (
-		<>
-			<h3>Ghost Drain</h3>
-			<p>No drain detected</p>
-		</>
-	);
 
 	return (
 		<div className="command-center-container">
@@ -49,15 +27,9 @@ export default function PowerSystem() {
 					status={powerStatus}
 					expandedContent={expandedContent}
 				/>
-				<TileSmlSquare
-					status1={battery}
-					status2={devices}
-					className="power-tile"
-				/>
-				<TileSmlRect
-					status1={circuitStatus}
-					status2={ghostDrain}
-					className="power-tile"
+				<img
+					src={BatteryChargeStatus}
+					alt=""
 				/>
 				<TileXL
 					className="graph-tile"
