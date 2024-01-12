@@ -8,6 +8,7 @@ import TileXL from "../TileComponents/TileXL";
 import MyChart from "../../Data/MyChart";
 import BatteryChargeStatus from "../../Assets/PowerSystem/BatteryChargeStatus.png";
 import LightandFanTiles from "../../Assets/PowerSystem/LightandFanTiles.png";
+import AnimatedChart from "../../Data/AnimatedChart";
 
 export default function PowerSystem() {
 	const powerStatus = "You are generating more than you are using today.";
@@ -35,7 +36,7 @@ export default function PowerSystem() {
 				<TileXL
 					className="graph-tile"
 					title="Battery SOC Chart"
-					content={<MyChart />}
+					content={<AnimatedChart />}
 				/>
 				<div style={{ margin: "-16px" }}>
 					<img
