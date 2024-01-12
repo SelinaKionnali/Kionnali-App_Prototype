@@ -7,6 +7,7 @@ import profilePicture from "../../Assets/MenuPage/ProfilePicture.png";
 import backArrow from "../../Assets/MenuPage/backArrow.png";
 import TileNarrow from "../TileComponents/TileNarrow";
 import threeDots from "../../Assets/Dashboard/threeDots.png";
+import DragandDropIcon from "../../Assets/Dashboard/DragandDropIcon.png"
 import { Link } from "react-router-dom";
 import initialData from "./MenuPageDataTwo";
 
@@ -116,7 +117,7 @@ export default function MenuPage() {
 								<h3 className="menu-item-title">
 									{column.title}
 									<img
-										src={threeDots}
+										src={DragandDropIcon}
 										alt="drag and drop icon"
 										className="menu-title-three-dots"
 									/>
@@ -147,7 +148,7 @@ export default function MenuPage() {
 																{subpage.page}
 																<div className="three-dot-container">
 																	<img
-																		src={threeDots}
+																		src={DragandDropIcon}
 																		alt=""
 																		className="menu-item-three-dots"
 																	/>
