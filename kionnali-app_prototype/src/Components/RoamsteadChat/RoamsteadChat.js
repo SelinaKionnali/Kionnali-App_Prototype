@@ -3,6 +3,9 @@ import "../RoamsteadChat/RoamsteadChat.css";
 import HeaderBtns from "../Dashboard/HeaderBtns";
 import searchIcon from "../../Assets/RoamsteadChat/searchIcon.png";
 import TileLarge from "../TileComponents/TileLarge";
+import SearchBar from "../../Assets/RoamsteadChat/SearchBar.png"
+import RoamsteadChatPage from "../../Assets/RoamsteadChat/RoamsteadChatPage.png"
+import HeaderButtons from "../../Assets/RoamsteadChat/HeaderButtons.png"
 
 export default function RoamsteadChat() {
 	return (
@@ -12,29 +15,24 @@ export default function RoamsteadChat() {
 					<h1>Roamstead Chat</h1>
 					<p>Ask me anything</p>
 					<div className="cc-rounded-tile">
-						<HeaderBtns />
-						<div className="search-box">
-							<input
-								type="text"
-								placeholder="  Type here"
-								className="search-input"
-							/>
-							<div className="button-container">
-								<button className="search-button">
-									<img
-										src={searchIcon}
-										alt="search icon"
-									/>
-								</button>
-							</div>
-						</div>
-						<div className="chat-history">
-							<h3>Today</h3>
-							<TileLarge />
-							<h3>Yesterday</h3>
-							<TileLarge />
-						</div>
+					<img 
+						src={HeaderButtons}
+						alt="Battery Charge Status"
+						style={{margin: "18px"}}
+						/>
+
+						<img 
+						src={SearchBar}
+						alt="Battery Charge Status"
+						/>
+												<img 
+						src={RoamsteadChatPage}
+						alt="Battery Charge Status"
+						/>
+
+
 					</div>
+				
 				</div>
 			</div>
 		</>

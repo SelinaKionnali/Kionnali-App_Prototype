@@ -27,7 +27,6 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)) drop-shadow(4px 0px 10px rg
 .header-btn-3:hover,
 .header-btn-2:hover {
   cursor: pointer;
-  transform: scale(1.1);
 }
 
 

@@ -411,5 +411,19 @@ gap: 6px;
   border-radius: 0px 0px 48px 48px  ;
 }
 
+.draggable-item {
+  margin: 0px; 
+  
+}
 
-
+.droppable-container {
+  padding-bottom: 8px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+    width: 369px;
+  height: fit-content;
+  margin-bottom: 8px;
+}

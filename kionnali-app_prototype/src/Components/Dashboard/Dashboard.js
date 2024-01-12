@@ -7,12 +7,82 @@ import ForumPostsCard from "../Dashboard/ForumPostsCard";
 import MarketplaceCard from "./MarketplaceCard";
 import SystemPlanning from "./SystemPlanning";
 import "../../Components/StickyFooter.css";
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+
+const initialData = {
+	cards: {
+	  "card-1": { component: SystemPlanning, id: "1" },
+	  "card-2": { component: ForumPostsCard, id: "2" },
+	  "card-3": { component: MarketplaceCard, id: "3" },
+	},
+	columns: {
+	  "column-1": {
+		id: "column-1",
+		title: "Dashboard Cards",
+		cardIds: ["card-1", "card-2", "card-3"],
+	  }
+	},
+	// If you have only one column you might not need 'columnOrder'
+	columnOrder: ["column-1"],
+  };
+
+
+const reorder = (list, startIndex, endIndex) => {
+	const result = Array.from(list);
+	const [removed] = result.splice(startIndex, 1);
+	result.splice(endIndex, 0, removed);
+  
+	return result;
+  };
+
+  // a  component that can render any of the cards based on a type
+const CardComponent = ({ type }) => {
+	if (type === 'SystemPlanning') return <SystemPlanning />;
+	if (type === 'ForumPostsCard') return <ForumPostsCard />;
+	if (type === 'MarketplaceCard') return <MarketplaceCard />;
+	return null;
+  };
 
 export default function Dashboard(props) {
 	let history = useHistory();
 
 	const [isExpanded, setIsExpanded] = useState(false);
-
+	const [state, setState] = useState(initialData);
+	  
+	const onDragEnd = (result) => {
+		const { destination, source, draggableId } = result;
+	  
+		if (!destination) {
+		  return;
+		}
+	  
+		if (
+		  destination.droppableId === source.droppableId &&
+		  destination.index === source.index
+		) {
+		  return;
+		}
+	  
+		const column = state.columns[source.droppableId];
+		const newCardIds = Array.from(column.cardIds);
+		newCardIds.splice(source.index, 1);
+		newCardIds.splice(destination.index, 0, draggableId);
+	  
+		const newColumn = {
+		  ...column,
+		  cardIds: newCardIds,
+		};
+	  
+		const newState = {
+		  ...state,
+		  columns: {
+			...state.columns,
+			[newColumn.id]: newColumn,
+		  },
+		};
+	  
+		setState(newState);
+	  };
 	const toggleRoamsteadStatus = (e) => {
 		e.stopPropagation();
 		setIsExpanded(!isExpanded);
@@ -75,7 +145,7 @@ export default function Dashboard(props) {
 		"The weather for the next week is sunny with no upcoming extreme events. You will be net positive on energy and you have plenty of water in store. Your tomatoes are about a week from harvest!";
 
 	return (
-		<>
+		<DragDropContext onDragEnd={onDragEnd}>
 			<div className="container">
 				<div className="dashboard">
 					<div className="welcome"></div>
@@ -144,13 +214,37 @@ export default function Dashboard(props) {
 										onClick={navigateCompostPage}></button>
 								</div>
 							</div>
-							<SystemPlanning handleClick={handleRainfallClick} />
-							<ForumPostsCard />
-							<MarketplaceCard />
+							
+							<Droppable droppableId="column-1">
+  {(provided) => (
+    <div ref={provided.innerRef} {...provided.droppableProps}>
+      {state.columns["column-1"].cardIds.map((cardId, index) => {
+        const card = state.cards[cardId];
+        const Component = card.component;
+        return (
+          <Draggable key={cardId} draggableId={cardId} index={index}>
+            {(provided) => (
+              <div
+                ref={provided.innerRef}
+                {...provided.draggableProps}
+                {...provided.dragHandleProps}
+                style={provided.draggableProps.style}
+				className="draggable-item"
+              >
+                <Component />
+              </div>
+            )}
+          </Draggable>
+        );
+      })}
+      {provided.placeholder}
+    </div>
+  )}
+</Droppable>							
 						</div>
 					</div>
 				</div>
 			</div>
-		</>
+		</DragDropContext>	
 	);
 }

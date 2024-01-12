@@ -116,11 +116,7 @@ export default function MenuPage() {
 								className="narrow-tile-menu-page">
 								<h3 className="menu-item-title">
 									{column.title}
-									<img
-										src={DragandDropIcon}
-										alt="drag and drop icon"
-										className="menu-title-three-dots"
-									/>
+									
 								</h3>
 								<div className="menu-item-list">
 									{column.subpageIds.map((subpageId, index) => {
