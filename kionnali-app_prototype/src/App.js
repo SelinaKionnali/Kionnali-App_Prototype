@@ -1,7 +1,5 @@
 import {
-	BrowserRouter as Router,
-	Route,
-	Switch,
+	HashRouter as Router, Route, Switch,
 	useLocation,
 } from "react-router-dom";
 import Home from "./Components/LandingPage/Home";
