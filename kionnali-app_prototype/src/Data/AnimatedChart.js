@@ -104,6 +104,9 @@ export default function AnimatedChart() {
 				return delay;
 			},
 		},
+        borderColor: {
+            color: '#FFC700'
+        }
 		// ... include other options as needed
 	};
 

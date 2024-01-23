@@ -47,7 +47,7 @@ export default function PowerSystem() {
 				<TileXL
 					className="graph-tile"
 					title="Solar Panel Gain"
-					content={<MyChart />}
+					content={<AnimatedChart />}
 				/>
 			</div>
 		</div>
