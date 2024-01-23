@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Kionnali-App_Prototype/static/css/main.908f6df1.css",
-    "main.js": "/Kionnali-App_Prototype/static/js/main.e88c6f7a.js",
+    "main.js": "/Kionnali-App_Prototype/static/js/main.b43dc888.js",
     "static/js/787.b51fb991.chunk.js": "/Kionnali-App_Prototype/static/js/787.b51fb991.chunk.js",
     "static/media/Water.png": "/Kionnali-App_Prototype/static/media/Water.6fea745f95d157c22aed.png",
     "static/media/Compost.png": "/Kionnali-App_Prototype/static/media/Compost.b23198f859716aa0f923.png",
@@ -55,11 +55,11 @@
     "static/media/closeX.svg": "/Kionnali-App_Prototype/static/media/closeX.3cc4cc73f3e5a3853e39.svg",
     "index.html": "/Kionnali-App_Prototype/index.html",
     "main.908f6df1.css.map": "/Kionnali-App_Prototype/static/css/main.908f6df1.css.map",
-    "main.e88c6f7a.js.map": "/Kionnali-App_Prototype/static/js/main.e88c6f7a.js.map",
+    "main.b43dc888.js.map": "/Kionnali-App_Prototype/static/js/main.b43dc888.js.map",
     "787.b51fb991.chunk.js.map": "/Kionnali-App_Prototype/static/js/787.b51fb991.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.908f6df1.css",
-    "static/js/main.e88c6f7a.js"
+    "static/js/main.b43dc888.js"
   ]
 }
